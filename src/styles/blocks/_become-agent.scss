@@ -1,0 +1,79 @@
+.become-agent {
+  padding: 55px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+  &__title {
+    margin: 0 0 5px;
+    line-height: 1;
+  }
+  &__pre-title {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    @include clearfix;
+    li {
+      width: 50%;
+      height: 220px;
+      padding: 20px 75px;
+      float: left;
+      &:before {
+        font-size: 85px;
+      }
+    }
+    &-title {
+      margin: 5px 0 0;
+      text-transform: uppercase;
+    }
+    .icon-certificate {
+      border-bottom: 1px solid #ece8e1;
+      border-right: 1px solid #ece8e1;
+      &:before {
+        color: #f8c343
+      }
+    }
+    .icon-percent {
+      border-bottom: 1px solid #ece8e1;
+      &:before {
+        color: #ff444a
+      }
+    }
+    .icon-high-volume {
+      padding-top: 40px;
+      border-right: 1px solid #ece8e1;
+      &:before {
+        color: #99b200
+      }
+    }
+    .icon-discount-on-payment {
+      padding-top: 40px;
+      :before {
+        color: #0073b9
+      }
+    }
+    .become {
+      padding: 0;
+      margin: -95px 0 0 -95px;
+      font-size: 20px;
+      background-color: #f17f21;
+      border-radius: 50%;
+      text-transform: uppercase;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include FranklinGothicMedium;
+      a {
+        width: 190px;
+        height: 190px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+      }
+    }
+  }
+}
