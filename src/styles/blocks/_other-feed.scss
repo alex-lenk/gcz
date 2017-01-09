@@ -1,0 +1,54 @@
+.other-feed {
+  padding: 45px 0 0;
+  text-align: center;
+  .animal-feed__list > li {
+    margin-bottom: 85px;
+    padding-left: 10px;
+  }
+  .for-cow:after {
+    width: 273px;
+    height: 196px;
+    bottom: -71px;
+    right: -47px;
+    background: url("../images/cow.png") no-repeat;
+  }
+  .for-pig:after {
+    width: 246px;
+    height: 191px;
+    bottom: -68px;
+    right: -41px;
+    background: url("../images/pig.png") no-repeat;
+  }
+  .for-chicken:after {
+    width: 176px;
+    height: 198px;
+    bottom: -68px;
+    right: -44px;
+    background: url("../images/chicken.png") no-repeat;
+  }
+  .for-rabbits:after {
+    width: 208px;
+    height: 191px;
+    bottom: -43px;
+    right: -37px;
+    background: url("../images/rabbit.png") no-repeat;
+  }
+  .technology {
+    padding: 0;
+    text-align: left;
+    li {
+      width: 100%;
+      margin-bottom: 0;
+      &:before {
+        color: #f17f21;
+        font-size: 60px;
+        float: left;
+        margin: 10px 15px 65px 0;
+      }
+    }
+  }
+  .technology-title {
+    margin-top: 0;
+    min-height: initial;
+  }
+}

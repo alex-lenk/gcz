@@ -19,11 +19,7 @@
 @import "blocks/navigation";
 @import "blocks/search-area";
 @import "blocks/technology";
-/* home-blocks */
-@import "home-blocks/header";
-@import "home-blocks/advantages";
-@import "home-blocks/animal-feed";
-
-.other-feed {
-
-}
+@import "blocks/header-home";
+@import "blocks/advantages";
+@import "blocks/animal-feed";
+@import "blocks/other-feed";
