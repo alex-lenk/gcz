@@ -1,0 +1,246 @@
+@import "variables";
+
+[class^="icon-"], [class*=" icon-"] {
+  &:before {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.icon-bag-of-sugar {
+  &:before {
+    content: $icon-bag-of-sugar;
+  }
+}
+
+.icon-box {
+  &:before {
+    content: $icon-box;
+  }
+}
+
+.icon-cancel {
+  &:before {
+    content: $icon-cancel;
+  }
+}
+
+.icon-cancel-circle {
+  &:before {
+    content: $icon-cancel-circle;
+  }
+}
+
+.icon-certificate {
+  &:before {
+    content: $icon-certificate;
+  }
+}
+
+.icon-chicken {
+  &:before {
+    content: $icon-chicken;
+  }
+}
+
+.icon-clock {
+  &:before {
+    content: $icon-clock;
+  }
+}
+
+.icon-cow {
+  &:before {
+    content: $icon-cow;
+  }
+}
+
+.icon-discount-on-payment {
+  &:before {
+    content: $icon-discount-on-payment;
+  }
+}
+
+.icon-ecologic-chemicals {
+  &:before {
+    content: $icon-ecologic-chemicals;
+  }
+}
+
+.icon-e-mail-envelope {
+  &:before {
+    content: $icon-e-mail-envelope;
+  }
+}
+
+.icon-file {
+  &:before {
+    content: $icon-file;
+  }
+}
+
+.icon-high-volume {
+  &:before {
+    content: $icon-high-volume;
+  }
+}
+
+.icon-hourglass {
+  &:before {
+    content: $icon-hourglass;
+  }
+}
+
+.icon-industrial-factory {
+  &:before {
+    content: $icon-industrial-factory;
+  }
+}
+
+.icon-line-stats {
+  &:before {
+    content: $icon-line-stats;
+  }
+}
+
+.icon-list {
+  &:before {
+    content: $icon-list;
+  }
+}
+
+.icon-location-sign {
+  &:before {
+    content: $icon-location-sign;
+  }
+}
+
+.icon-machinery {
+  &:before {
+    content: $icon-machinery;
+  }
+}
+
+.icon-mail {
+  &:before {
+    content: $icon-mail;
+  }
+}
+
+.icon-microscope-2 {
+  &:before {
+    content: $icon-microscope-2;
+  }
+}
+
+.icon-microscope {
+  &:before {
+    content: $icon-microscope;
+  }
+}
+
+.icon-next {
+  &:before {
+    content: $icon-next;
+  }
+}
+
+.icon-percent {
+  &:before {
+    content: $icon-percent;
+  }
+}
+
+.icon-phone-call {
+  &:before {
+    content: $icon-phone-call;
+  }
+}
+
+.icon-phone {
+  &:before {
+    content: $icon-phone;
+  }
+}
+
+.icon-pig-head {
+  &:before {
+    content: $icon-pig-head;
+  }
+}
+
+.icon-locality {
+  &:before {
+    content: $icon-locality;
+  }
+}
+
+.icon-production-plant {
+  &:before {
+    content: $icon-production-plant;
+  }
+}
+
+.icon-quality {
+  &:before {
+    content: $icon-quality;
+  }
+}
+
+.icon-rabbit {
+  &:before {
+    content: $icon-rabbit;
+  }
+}
+
+.icon-rabbit-head {
+  &:before {
+    content: $icon-rabbit-head;
+  }
+}
+
+.icon-rice {
+  &:before {
+    content: $icon-rice;
+  }
+}
+
+.icon-ruble {
+  &:before {
+    content: $icon-ruble;
+  }
+}
+
+.icon-sack {
+  &:before {
+    content: $icon-sack;
+  }
+}
+
+.icon-scale {
+  &:before {
+    content: $icon-scale;
+  }
+}
+
+.icon-wall-clock {
+  &:before {
+    content: $icon-wall-clock;
+  }
+}
+
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}

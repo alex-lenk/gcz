@@ -1,0 +1,50 @@
+.advantages {
+  background: url("../images/bg-layer.jpg") repeat-x top right;
+  .section-block__right {
+    padding: 70px 0 45px;
+    position: relative;
+    &:before, &:after {
+      position: absolute;
+      content: '';
+      z-index: 5;
+    }
+    &:before {
+      width: 286px;
+      height: 136px;
+      top: 0;
+      left: -20px;
+      opacity: .8;
+      background: url("../images/provender-2.png") no-repeat;
+    }
+    &:after {
+      width: 374px;
+      height: 340px;
+      top: -100px;
+      right: -170px;
+      background: url("../images/provender.png") no-repeat top;
+    }
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    z-index: 6;
+    li {
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 300;
+      @include SegoeUI;
+      &:not(:last-child) {
+        margin-right: 35px;
+      }
+      &:before {
+        margin: 0 auto 20px;
+        display: block;
+        color: #14a758;
+        font-size: 60px;
+      }
+    }
+  }
+}

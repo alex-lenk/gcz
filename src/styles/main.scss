@@ -1,0 +1,29 @@
+/*
+@import "common/checkbox-custom";
+@import "common/radio-custom";
+// Blocks
+@import "partials/footer";
+*/
+@import 'lib/breakpoint';
+@import 'lib/breakpoint-slicer';
+//common
+@import "common/mixin";
+@import "common/fonts";
+@import "common/common";
+@import "common/icons";
+@import "common/form";
+@import "common/buttons";
+@import "common/gred";
+/* blocks */
+@import "blocks/section-block";
+@import "blocks/navigation";
+@import "blocks/search-area";
+@import "blocks/technology";
+/* home-blocks */
+@import "home-blocks/header";
+@import "home-blocks/advantages";
+@import "home-blocks/animal-feed";
+
+.other-feed {
+
+}

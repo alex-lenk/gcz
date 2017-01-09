@@ -1,0 +1,22 @@
+button {
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+.button {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  text-align: center;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+  line-height: 1;
+  &:hover,
+  &:active,
+  .state_active,
+  .current {
+    color: inherit;
+  }
+}

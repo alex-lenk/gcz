@@ -1,0 +1,25 @@
+.technology {
+  margin: 0;
+  padding: 80px 0 0;
+  list-style: none;
+  text-align: center;
+  li {
+    width: 47%;
+    margin: 0 1% 25px;
+    display: inline-block;
+    vertical-align: top;
+    &:before {
+      color: #f17f21;
+      font-size: 60px;
+    }
+  }
+  &-title {
+    min-height: 45px;
+    margin: 10px 0 15px;
+    text-transform: uppercase;
+  }
+  &-text {
+    font-style: italic;
+    font-size: 14px;
+  }
+}

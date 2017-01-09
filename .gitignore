@@ -1,0 +1,7 @@
+bower_components
+gulp-screencast
+node_modules
+gcz.iml
+.idea
+build
+source

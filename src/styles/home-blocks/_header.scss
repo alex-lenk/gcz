@@ -1,0 +1,11 @@
+.header {
+  height: 440px;
+  background: url(../images/bg-header.jpg) no-repeat center top;
+  color: #fff;
+  &-title {
+    padding: 80px 0 20px;
+    color: inherit;
+  }
+  &-info {
+  }
+}

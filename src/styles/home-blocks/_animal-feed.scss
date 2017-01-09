@@ -1,0 +1,87 @@
+.animal-feed {
+  padding: 45px 0 60px;
+  background-color: #f2f2f2;
+  text-align: center;
+  &__title {
+    margin: 0 0 5px;
+  }
+  &__pre-title {
+    margin: 0 0 35px;
+  }
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include clearfix;
+    .item-title {
+      line-height: 1.2;
+      margin: 0 0 25px;
+      a {
+        display: inline-block;
+      }
+    }
+    li {
+      padding-left: 0;
+      position: relative;
+      &:after {
+        width: 249px;
+        height: 237px;
+        content: '';
+        position: absolute;
+      }
+    }
+    .for-cow {
+      &:after {
+        bottom: -85px;
+        right: -20px;
+        background: url("../images/calves.png") no-repeat;
+      }
+      img {
+        margin-left: -25px;
+      }
+    }
+    .for-piglets {
+      &:after {
+        bottom: -95px;
+        right: -30px;
+        background: url("../images/piglets.png") no-repeat;
+      }
+      img {
+        margin-left: -15px;
+      }
+    }
+    .for-chickens {
+      &:after {
+        bottom: -115px;
+        right: -50px;
+        background: url("../images/chickens.png") no-repeat;
+      }
+      img {
+        margin-left: -5px;
+      }
+    }
+  }
+  &__info {
+    padding: 15px 40px;
+    background-color: #f17f21;
+    display: flex;
+    align-items: center;
+    .info-left {
+      margin-right: 30px;
+      color: #ffffff;
+      &__percent {
+        font-size: 48px;
+        @include FranklinGothicMedium;
+      }
+      &__text {
+        text-transform: uppercase;
+      }
+    }
+    .info-center {
+      font-style: italic;
+      font-size: 14px;
+      text-align: left;
+      @include SegoeUI;
+    }
+  }
+}

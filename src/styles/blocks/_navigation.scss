@@ -1,0 +1,188 @@
+.navigation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  .container {
+    height: 100%;
+  }
+  &-sidebar {
+    width: 220px;
+    height: 100%;
+    padding-top: 40px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, .7);
+    &:before, &:after {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      content: '';
+    }
+    &:before {
+      width: 130em;
+      right: 220px;
+      background-color: inherit;
+    }
+    &:after {
+      z-index: 8;
+      width: 1px;
+      background-color: rgba(0, 0, 0, 0.05);
+      right: 0;
+      box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.3);
+    }
+    .company-group {
+      .title {
+        margin-bottom: 10px;
+        font-size: 11px;
+        text-transform: uppercase;
+        @include SegoeUI;
+      }
+    }
+  }
+
+  &-contacts {
+    padding: 10px 0 25px;
+    &__phone {
+      font-size: 20px;
+      color: #282828;
+      @include FranklinGothicMedium;
+    }
+    &__button {
+      padding: 0;
+      margin: 3px 0 0;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      border-bottom: 1px dashed;
+      @include SegoeUI;
+    }
+  }
+
+  &-menu {
+    margin: 0 0 25px;
+    padding: 0;
+    list-style: none;
+    letter-spacing: 1px;
+    @include SegoeUI;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &-products {
+    margin-bottom: 60px;
+    padding: 35px 0;
+    z-index: 7;
+    position: relative;
+    &:after {
+      width: 130em;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 6;
+      background-color: inherit;
+    }
+    &__button {
+      margin: 0 0 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      z-index: 7;
+    }
+    &__menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      position: relative;
+      z-index: 7;
+      li {
+        margin-bottom: 20px;
+        a {
+          position: relative;
+          z-index: 6;
+          text-transform: uppercase;
+          @include FranklinGothicMedium;
+          &:before {
+            color: #f17f21;
+            font-size: 40px;
+            margin-right: 20px;
+            vertical-align: middle;
+            position: relative;
+            z-index: 6;
+          }
+          &:hover {
+            + .navigation-products__next:before {
+              color: #f17f21;
+            }
+          }
+        }
+      }
+    }
+    &__next {
+      position: relative;
+      z-index: 6;
+      cursor: pointer;
+      &:before {
+        font-size: 10px;
+        color: #14a758;
+      }
+      &:hover:before {
+        color: #f17f21;
+      }
+    }
+    &__submenu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 950px;
+      padding: 80px 0 0 0;
+      background-color: #fff;
+      transform: translateX(-100%);
+      transition: all 300ms linear;
+      will-change: transform;
+      opacity: 0;
+      z-index: 5;
+      &:before {
+        font-size: 200px;
+        color: #f17f21;
+        position: absolute;
+        right: 15px;
+        bottom: 20px;
+        opacity: .4;
+      }
+      .title {
+        margin-bottom: 10px;
+        color: #14a758;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        @include FranklinGothicMedium;
+      }
+      .items {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          margin-bottom: 10px;
+          font-size: 12px;
+          @include SegoeUI;
+        }
+        a {
+          border-bottom: 1px solid;
+        }
+      }
+    }
+    &__active {
+      .navigation-products__submenu {
+        transform: none;
+        opacity: 1;
+      }
+      background-color: #ffffff;
+      &:after {
+        content: '';
+      }
+    }
+  }
+}

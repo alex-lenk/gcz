@@ -1,0 +1,123 @@
+.checkbox {
+  &[type="checkbox"] {
+    display: none;
+    + .checkbox-label {
+      &::before {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        background-color: #f9f9f9;
+        cursor: pointer;
+        content: "";
+      }
+    }
+    &:checked + .checkbox-label::before {
+    }
+  }
+}
+
+.radio {
+  &[type="radio"] {
+    display: none;
+    + label {
+      &::before {
+        display: inline-block;
+        width: 19px;
+        height: 19px;
+        margin: -1px 4px 0 0;
+        vertical-align: middle;
+        cursor: pointer;
+        content: "";
+      }
+    }
+    &:checked + label::before {
+    }
+  }
+}
+
+/*
+<label class="label-block">
+    <input type="checkbox" name="" class="checkbox-custom">
+    <span class="checkbox-custom-view label">Fabfoxx</span>
+</label>
+*/
+.checkbox-custom {
+  display: none;
+  + .checkbox-custom-view::before {
+    width: 35px;
+    height: 35px;
+    margin: 2px 0 0 -47px;
+    background-color: #f9f9f9;
+    content: '';
+    position: absolute;
+    line-height: normal;
+  }
+  &:checked {
+    + .checkbox-custom-view {
+      &::after {
+        border-bottom: 2px solid #000;
+        border-left: 2px solid #000;
+        content: '';
+        display: block;
+        height: 10px;
+        top: 12px;
+        left: 9px;
+        position: absolute;
+        transform: rotate(-45deg);
+        width: 17px;
+      }
+    }
+    .checkbox-custom-view::before {
+      background-color: #F2F2F2;
+    }
+  }
+  &-view {
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 47px;
+    line-height: 37px;
+    position: relative;
+    color: #767676;
+    font-weight: 300;
+
+  }
+}
+
+/*
+  <label class="checkbox-single">
+      <input type="checkbox" name="" class="checkbox-single_custom">
+      <div class="checkbox-single_label"></div>
+  </label>
+*/
+.checkbox-single {
+  margin-bottom: 0;
+  &_label {
+    width: 30px;
+    height: 30px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    background-color: #f9f9f9;
+  }
+  &_custom {
+    display: none;
+    &:checked {
+      + .checkbox-single_label {
+        border: 1px solid;
+        &::after {
+          border-bottom: 2px solid #000;
+          border-left: 2px solid #000;
+          height: 10px;
+          top: 7px;
+          left: 6px;
+          position: absolute;
+          transform: rotate(-45deg);
+          width: 17px;
+          content: '';
+        }
+      }
+    }
+  }
+}
