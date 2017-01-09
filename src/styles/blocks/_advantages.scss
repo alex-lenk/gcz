@@ -1,6 +1,6 @@
 .advantages {
   background: url("../images/bg-layer.jpg") repeat-x top right;
-  .section-block__right {
+  .section-right {
     padding: 70px 0 45px;
     position: relative;
     &:before, &:after {
@@ -35,7 +35,6 @@
       text-transform: uppercase;
       text-align: center;
       font-weight: 300;
-      @include SegoeUI;
       &:not(:last-child) {
         margin-right: 35px;
       }

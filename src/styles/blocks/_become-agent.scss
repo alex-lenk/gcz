@@ -59,8 +59,6 @@
       padding: 0;
       margin: -95px 0 0 -95px;
       font-size: 20px;
-      background-color: #f17f21;
-      border-radius: 50%;
       text-transform: uppercase;
       position: absolute;
       top: 50%;
@@ -69,6 +67,8 @@
       a {
         width: 190px;
         height: 190px;
+        background-color: #f17f21;
+        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;

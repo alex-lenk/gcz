@@ -2,13 +2,13 @@ body {
   color: #282828;
   font-size: 16px;
   line-height: 1.4;
-  position: relative;
-  overflow-x: hidden;
+  @include SegoeUI;
 }
 
-a, .as-link {
+a, .as-link, .link-dashed {
   color: #14a758;
   text-decoration: none;
+  transition: all 0.3s ease;
   &:hover,
   &:active,
   .state_active,
@@ -17,10 +17,14 @@ a, .as-link {
   }
 }
 
-.as-link {
+.as-link, .link-dashed {
   cursor: pointer;
   border: transparent;
   background-color: transparent;
+}
+
+.link-dashed {
+  border-bottom: 1px dashed;
 }
 
 h1, h2, h4 {
@@ -31,7 +35,6 @@ h1, h2, h4 {
 
 h3, .h3, h5, h6 {
   font-weight: 300;
-  @include SegoeUI;
 }
 
 h1 {
@@ -179,4 +182,9 @@ blockquote .small:before {
   &-caption {
     display: table-caption
   }
+}
+
+.wrapping {
+  position: relative;
+  overflow-x: hidden;
 }

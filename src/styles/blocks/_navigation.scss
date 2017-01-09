@@ -37,7 +37,6 @@
         margin-bottom: 10px;
         font-size: 11px;
         text-transform: uppercase;
-        @include SegoeUI;
       }
     }
   }
@@ -54,8 +53,6 @@
       margin: 3px 0 0;
       font-size: 14px;
       letter-spacing: 0.5px;
-      border-bottom: 1px dashed;
-      @include SegoeUI;
     }
   }
 
@@ -64,11 +61,8 @@
     padding: 0;
     list-style: none;
     letter-spacing: 1px;
-    @include SegoeUI;
-    li {
-      &:not(:last-child) {
-        margin-bottom: 18px;
-      }
+    li:not(:last-child) {
+      margin-bottom: 18px;
     }
   }
   &-products {
@@ -113,10 +107,8 @@
             position: relative;
             z-index: 6;
           }
-          &:hover {
-            + .navigation-products__next:before {
-              color: #f17f21;
-            }
+          &:hover + .navigation-products__next:before {
+            color: #f17f21;
           }
         }
       }
@@ -167,7 +159,6 @@
         li {
           margin-bottom: 10px;
           font-size: 12px;
-          @include SegoeUI;
         }
         a {
           border-bottom: 1px solid;

@@ -5,7 +5,7 @@
   background: -webkit-linear-gradient(top, rgba(255, 234, 212, 1) 0%, rgba(255, 234, 212, 0.99) 1%, rgba(255, 234, 212, 0) 100%);
   background: linear-gradient(to bottom, rgba(255, 234, 212, 1) 0%, rgba(255, 234, 212, 0.99) 1%, rgba(255, 234, 212, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffead4', endColorstr='#00ffead4', GradientType=0);
-  .section-block__right {
+  .section-right {
     position: relative;
     &:after {
       width: 555px;
@@ -54,8 +54,7 @@
       position: absolute;
       bottom: 0;
       content: '';
-      background-image: url("../images/left-right-shadow.png");
-      background-repeat: no-repeat;
+      background: url("../images/left-right-shadow.png") no-repeat;
     }
     &:before {
       left: -16px;
