@@ -13,7 +13,7 @@
 @import "common/icons";
 @import "common/form";
 @import "common/buttons";
-@import "common/gred";
+@import "common/grid";
 /* blocks */
 @import "blocks/section-block";
 @import "blocks/navigation";
@@ -26,8 +26,4 @@
 @import "blocks/manufactured";
 @import "blocks/become-agent";
 @import "blocks/footer";
-
-.news-carousel {
-  &-all {
-  }
-}
+@import "blocks/news-carousel";

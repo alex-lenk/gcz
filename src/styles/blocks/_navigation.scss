@@ -12,7 +12,7 @@
     position: absolute;
     top: 0;
     left: 10px;
-    z-index: 5;
+    z-index: 8;
     background-color: rgba(255, 255, 255, .7);
     &:before, &:after {
       height: 100%;
@@ -94,22 +94,22 @@
       z-index: 7;
       li {
         margin-bottom: 20px;
-        a {
+      }
+      a {
+        position: relative;
+        z-index: 6;
+        text-transform: uppercase;
+        @include FranklinGothicMedium;
+        &:before {
+          color: #f17f21;
+          font-size: 40px;
+          margin-right: 20px;
+          vertical-align: middle;
           position: relative;
           z-index: 6;
-          text-transform: uppercase;
-          @include FranklinGothicMedium;
-          &:before {
-            color: #f17f21;
-            font-size: 40px;
-            margin-right: 20px;
-            vertical-align: middle;
-            position: relative;
-            z-index: 6;
-          }
-          &:hover + .navigation-products__next:before {
-            color: #f17f21;
-          }
+        }
+        &:hover + .navigation-products__next:before {
+          color: #f17f21;
         }
       }
     }
