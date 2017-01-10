@@ -1,6 +1,9 @@
 .other-feed {
   padding: 45px 0 0;
   text-align: center;
+  @include to('m') {
+    padding-bottom: 50px;
+  }
   .animal-feed__list > li {
     margin-bottom: 85px;
     padding-left: 10px;
@@ -50,5 +53,9 @@
   .technology-title {
     margin-top: 0;
     min-height: initial;
+  }
+
+  .get-pricelist {
+    margin-top: -30px;
   }
 }

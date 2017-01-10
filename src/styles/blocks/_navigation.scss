@@ -2,18 +2,68 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  .container {
+  .wrap {
     height: 100%;
+    position: relative;
   }
+  &-panel {
+    position: relative;
+    z-index: 9;
+    @include from('l') {
+      padding-top: 40px;
+      display: inline-block;
+    }
+    @include to('m') {
+      height: 55px;
+      padding-left: 45px;
+      margin: 0 -15px;
+      background-color: #ffffff;
+      .burger-menu-activate {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        &:before {
+          color: #14a758;
+        }
+        &:not(.icon-cancel):after {
+          height: 1px;
+          content: '';
+          display: block;
+          background-color: #14a758;
+          box-shadow: 0 5px 0 0 #14a758, 0 10px 0 0 #14a758;
+        }
+      }
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 15px;
+        margin-left: 15px;
+        img {
+          width: 130px;
+        }
+      }
+    }
+  }
+
   &-sidebar {
     width: 220px;
     height: 100%;
-    padding-top: 40px;
+    padding-top: 120px;
     position: absolute;
     top: 0;
     left: 10px;
     z-index: 8;
     background-color: rgba(255, 255, 255, .7);
+    transition: all 300ms linear;
+    @include to('m') {
+      transform: translateX(-105%);
+      will-change: transform;
+      &-show {
+        transform: translateX(0);
+      }
+    }
     &:before, &:after {
       height: 100%;
       position: absolute;
@@ -65,6 +115,7 @@
       margin-bottom: 18px;
     }
   }
+
   &-products {
     margin-bottom: 60px;
     padding: 35px 0;
@@ -85,6 +136,9 @@
       letter-spacing: 1px;
       position: relative;
       z-index: 7;
+      .icon-bottom {
+        font-size: 14px;
+      }
     }
     &__menu {
       margin: 0;
@@ -99,6 +153,7 @@
         position: relative;
         z-index: 6;
         text-transform: uppercase;
+        display: inline-block;
         @include FranklinGothicMedium;
         &:before {
           color: #f17f21;
@@ -114,17 +169,21 @@
       }
     }
     &__next {
-      position: relative;
-      z-index: 6;
-      cursor: pointer;
-      &:before {
-        font-size: 12px;
-        color: #14a758;
-      }
-      &:hover:before {
-        color: #f17f21;
+      .icon-next {
+        position: relative;
+        z-index: 6;
+        cursor: pointer;
+        padding-left: 5px;
+        &:before {
+          font-size: 12px;
+          color: #14a758;
+        }
+        &:hover:before {
+          color: #f17f21;
+        }
       }
     }
+
     &__submenu {
       position: absolute;
       top: 0;
@@ -165,6 +224,7 @@
         }
       }
     }
+
     &__active {
       .navigation-products__submenu {
         transform: none;

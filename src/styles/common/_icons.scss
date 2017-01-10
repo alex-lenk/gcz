@@ -149,15 +149,33 @@
   }
 }
 
+.icon-preview {
+  &:before {
+    content: $icon-preview;
+  }
+}
+
+.icon-top {
+  &:before {
+    content: $icon-top;
+  }
+}
+
+.icon-bottom {
+  &:before {
+    content: $icon-bottom;
+  }
+}
+
 .icon-next {
   &:before {
     content: $icon-next;
   }
 }
 
-.icon-percent {
+.icon-percentage {
   &:before {
-    content: $icon-percent;
+    content: $icon-percentage;
   }
 }
 
@@ -179,9 +197,9 @@
   }
 }
 
-.icon-locality {
+.icon-place-localizer {
   &:before {
-    content: $icon-locality;
+    content: $icon-place-localizer;
   }
 }
 
@@ -244,3 +262,10 @@
     content: $icon-search;
   }
 }
+
+.icon-deferment-payment {
+  &:before {
+    content: $icon-deferment-payment;
+  }
+}
+

@@ -36,7 +36,7 @@
         color: #f8c343
       }
     }
-    .icon-percent {
+    .icon-percentage {
       border-bottom: 1px solid #ece8e1;
       &:before {
         color: #ff444a
@@ -46,15 +46,16 @@
       padding-top: 40px;
       border-right: 1px solid #ece8e1;
       &:before {
-        color: #99b200
-      }
-    }
-    .icon-discount-on-payment {
-      padding-top: 40px;
-      :before {
         color: #0073b9
       }
     }
+    .icon-deferment-payment {
+      padding-top: 40px;
+      &:before {
+        color: #99b200
+      }
+    }
+
     .become {
       padding: 0;
       margin: -95px 0 0 -95px;
@@ -67,12 +68,15 @@
       a {
         width: 190px;
         height: 190px;
-        background-color: #f17f21;
         border-radius: 50%;
+        background-color: #14a758;
         display: flex;
         align-items: center;
         justify-content: center;
         color: #ffffff;
+        &:hover {
+          background-color: #f17f21;
+        }
       }
     }
   }

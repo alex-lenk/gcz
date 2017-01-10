@@ -1,10 +1,23 @@
 .search-area {
-  text-align: right;
-  padding-top: 20px;
-  z-index: 4;
-  position: relative;
-  float: right;
+  @include to('m') {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 9;
+    background-color: #ffffff;
+  }
+  @include from('l') {
+    text-align: right;
+    padding-top: 20px;
+    position: relative;
+    float: right;
+    z-index: 4;
+  }
   &__active, &:hover {
+    @include to('m') {
+      width: 100%;
+      padding-left: 45px;
+    }
     .search-area__button {
       border-color: #14a758;
       background-color: #14a758;
@@ -16,6 +29,14 @@
       width: 340px;
       opacity: 1;
       visibility: visible;
+      @include to('m') {
+        width: 100%;
+        border-color: #ece8e1;
+      }
+      @include from('l') {
+        width: 100%;
+        border-color: #ece8e1;
+      }
     }
   }
   &__input {
@@ -35,6 +56,10 @@
     transition: all 0.3s ease;
     &:focus, &:active {
       outline: none;
+    }
+    @include to('m') {
+      width: 100%;
+      border-color: #ece8e1;
     }
   }
   &__button {

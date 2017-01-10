@@ -7,9 +7,16 @@ $(document).ready(function () {
         }
     );
 
-    $(".navigation-products__next").click(
+    $(".navigation-products__next .icon-next").click(
         function () {
             $('.navigation-products').toggleClass("navigation-products__active");
+        }
+    );
+
+    $(".burger-menu-activate").click(
+        function () {
+            $('.burger-menu-activate').toggleClass("icon-cancel");
+            $('.navigation-sidebar').toggleClass("navigation-sidebar-show");
         }
     );
 

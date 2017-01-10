@@ -6,6 +6,9 @@
       border-bottom-color: transparent;
     }
   }
+  .container {
+    position: relative;
+  }
   &__title {
     margin: 0 0 30px;
     text-align: center;
@@ -39,8 +42,8 @@
   }
   &-all {
     position: absolute;
-    bottom: 3px;
-    right: 0;
+    bottom: 5px;
+    right: 15px;
     z-index: 8;
   }
   .owl-dots {

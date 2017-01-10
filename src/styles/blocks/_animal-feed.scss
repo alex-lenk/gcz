@@ -2,12 +2,14 @@
   padding: 45px 0 60px;
   background-color: #f2f2f2;
   text-align: center;
+
   &__title {
     margin: 0 0 5px;
   }
   &__pre-title {
     margin: 0 0 35px;
   }
+
   &__list {
     margin: 0;
     padding: 0;
@@ -61,47 +63,29 @@
       }
     }
   }
+
   &__info {
-    padding: 15px 40px;
-    background-color: #f17f21;
-    display: flex;
-    align-items: center;
-    position: relative;
-    &:before, &:after {
-      width: 100%;
-      height: 100%;
-      content: '';
-      position: absolute;
-      box-sizing: content-box;
-    }
-    &:before {
-      padding: 6px 0;
-      top: -6px;
-      left: 0;
-      background: url("../images/repeat-t-b.png") repeat-x top left, url("../images/repeat-t-b.png") repeat-x bottom left;
-    }
-    &:after {
-      padding: 0 6px;
-      top: 0;
-      left: -6px;
-      margin: 0;
-      background: url(../images/repeat-l-r.png) repeat-y top left, url(../images/repeat-l-r.png) repeat-y right top;
-    }
-    .info-left {
-      margin-right: 30px;
-      color: #ffffff;
-      &__percent {
-        font-size: 48px;
-        @include FranklinGothicMedium;
+    display: none;
+    @include from('l') {
+      padding: 15px 40px;
+      display: flex;
+      align-items: center;
+      .info-left {
+        margin-right: 30px;
+        color: #ffffff;
+        &__percent {
+          font-size: 48px;
+          @include FranklinGothicMedium;
+        }
+        &__text {
+          text-transform: uppercase;
+        }
       }
-      &__text {
-        text-transform: uppercase;
+      .info-center {
+        font-style: italic;
+        font-size: 14px;
+        text-align: left;
       }
-    }
-    .info-center {
-      font-style: italic;
-      font-size: 14px;
-      text-align: left;
     }
   }
 }

@@ -1,5 +1,7 @@
-.section-right {
-  width: 75%;
-  float: right;
-  padding-left: 5px;
+@include from('l') {
+  .section-right {
+    width: 75%;
+    float: right;
+    padding-left: 5px;
+  }
 }

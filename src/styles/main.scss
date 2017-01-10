@@ -27,3 +27,24 @@
 @import "blocks/become-agent";
 @import "blocks/footer";
 @import "blocks/news-carousel";
+
+.get-pricelist {
+  @include from('l') {
+    display: none;
+  }
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  .icon-list {
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    @include FranklinGothicMedium;
+    &:before {
+      font-size: 60px;
+      margin-right: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

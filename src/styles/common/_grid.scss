@@ -3,27 +3,12 @@
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
   @include clearfix;
-}
-
-@media (min-width: 540px) {
-  .container {
-    max-width: 740px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 800px;
-  }
-}
-
-@media (min-width: 960px) {
-  .container {
-    max-width: 960px;
+  @include from('l') {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
