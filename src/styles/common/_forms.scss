@@ -1,0 +1,102 @@
+.hide-placeholder {
+  &::-webkit-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #282828;
+  }
+  &::-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #282828;
+  }
+  &:-moz-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  &:-ms-input-placeholder {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    color: #282828;
+  }
+  &:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:focus:-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  &:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+.form-group {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-weight: normal;
+  transition: all .3s ease;
+  @include SegoeUI;
+}
+
+.form-control {
+  width: 100%;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ece8e1;
+  transition: all .3s ease;
+  &:focus {
+    outline: none;
+    border-color: #f17f21;
+  }
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 100px;
+  resize: none;
+}
+
+.error-form {
+  border-color: #ed4c4c;
+  &:focus {
+    border-color: #ed4c4c;
+  }
+}
+
+.error-name {
+  padding-left: 20px;
+  font-size: 12px;
+  color: #ed4c4c;
+}
+
+.error-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  right: -25px;
+  color: #ed4c4c;
+}
+
+.successful-filling {
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  bottom: 50%;
+  margin-bottom: -19px;
+  right: -27px;
+  border-bottom: 2px solid #14a758;
+  border-left: 2px solid #14a758;
+  transform: rotate(-45deg);
+}

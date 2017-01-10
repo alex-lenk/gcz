@@ -1,9 +1,4 @@
-/*
-@import "common/checkbox-custom";
-@import "common/radio-custom";
-// Blocks
-@import "partials/footer";
-*/
+//@import "common/radio-custom";
 @import 'lib/breakpoint';
 @import 'lib/breakpoint-slicer';
 //common
@@ -11,7 +6,8 @@
 @import "common/fonts";
 @import "common/common";
 @import "common/icons";
-@import "common/form";
+@import "common/forms";
+@import "common/checkbox-custom";
 @import "common/buttons";
 @import "common/grid";
 /* blocks */
@@ -29,12 +25,12 @@
 @import "blocks/news-carousel";
 
 .get-pricelist {
-  @include from('l') {
-    display: none;
-  }
   width: 100%;
   padding: 20px;
   text-align: center;
+  @include from('l') {
+    display: none;
+  }
   .icon-list {
     color: #ffffff;
     font-size: 20px;
@@ -46,5 +42,16 @@
       display: inline-block;
       vertical-align: middle;
     }
+  }
+}
+
+.general-form {
+  padding: 20px 45px;
+  .modal-title {
+    margin: 0 0 20px;
+    text-align: center;
+  }
+  .button-default {
+    width: 100%;
   }
 }
