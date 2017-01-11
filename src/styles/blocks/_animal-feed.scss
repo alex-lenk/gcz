@@ -25,6 +25,9 @@
     li {
       padding-left: 0;
       position: relative;
+      @include to('s') {
+        margin-bottom: 90px;
+      }
       &:after {
         width: 249px;
         height: 237px;

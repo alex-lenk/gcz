@@ -37,20 +37,23 @@ button {
       height: 100%;
       content: '';
       position: absolute;
-      box-sizing: content-box;
     }
     &:before {
       padding: 6px 0;
       top: -6px;
       left: 0;
+      box-sizing: content-box;
       background: url("../images/repeat-t-b.png") repeat-x top left, url("../images/repeat-t-b.png") repeat-x bottom left;
     }
-    &:after {
-      padding: 0 6px;
-      top: 0;
-      left: -6px;
-      margin: 0;
-      background: url(../images/repeat-l-r.png) repeat-y top left, url(../images/repeat-l-r.png) repeat-y right top;
+    @include from('s') {
+      &:after {
+        padding: 0 6px;
+        top: 0;
+        left: -6px;
+        margin: 0;
+        box-sizing: content-box;
+        background: url(../images/repeat-l-r.png) repeat-y top left, url(../images/repeat-l-r.png) repeat-y right top;
+      }
     }
   }
 }

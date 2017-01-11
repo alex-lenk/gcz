@@ -29,11 +29,11 @@
       width: 340px;
       opacity: 1;
       visibility: visible;
-      @include to('m') {
+      @include from('l') {
         width: 100%;
         border-color: #ece8e1;
       }
-      @include from('l') {
+      @include to('m') {
         width: 100%;
         border-color: #ece8e1;
       }
@@ -60,6 +60,9 @@
     @include to('m') {
       width: 100%;
       border-color: #ece8e1;
+    }
+    @include to('s') {
+      width: 0;
     }
   }
   &__button {

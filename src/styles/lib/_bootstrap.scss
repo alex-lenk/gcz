@@ -106,18 +106,34 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+}
+
+@media (max-width: 640px) {
+  .modal {
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: 640px) {
+  .modal-dialog {
+    margin: 10px;
+  }
 }
 
 .modal-content {
   position: relative;
   background-color: #ffffff;
-  border-radius: 15px;
-  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
   outline: 0;
+}
+
+@media (min-width: 640px) {
+  .modal-content {
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-radius: 15px;
+  }
 }
 
 .modal-backdrop {

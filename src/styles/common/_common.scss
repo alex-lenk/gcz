@@ -38,20 +38,29 @@ h3, .h3, h5, h6 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 35px;
   margin: 0;
-  letter-spacing: 3px;
   line-height: 1;
+  @include from('m') {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
 }
 
 h2 {
-  letter-spacing: 2px;
-  font-size: 50px;
+  font-size: 35px;
+  @include from('m') {
+    letter-spacing: 2px;
+    font-size: 50px;
+  }
 }
 
 h3, .h3 {
-  font-size: 20px;
-  letter-spacing: 0.5px;
+  font-size: 18px;
+  @include from('m') {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
 }
 
 h4 {
@@ -151,7 +160,7 @@ blockquote .small:before {
     float: left;
   }
   &-right {
-    float: left;
+    float: right;
   }
 }
 

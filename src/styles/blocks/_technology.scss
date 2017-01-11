@@ -4,10 +4,14 @@
   list-style: none;
   text-align: center;
   li {
-    width: 47%;
-    margin: 0 1% 40px;
-    display: inline-block;
-    vertical-align: top;
+    margin-bottom: 40px;
+    @include from('m') {
+      width: 47%;
+      margin-left: 1%;
+      margin-right: 1%;
+      display: inline-block;
+      vertical-align: top;
+    }
     &:before {
       color: #f17f21;
       font-size: 60px;

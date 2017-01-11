@@ -38,21 +38,25 @@
   }
   .technology {
     padding: 0;
-    text-align: left;
+    @include from('s') {
+      text-align: left;
+    }
     li {
       width: 100%;
-      margin-bottom: 0;
-      &:before {
-        color: #f17f21;
-        font-size: 60px;
-        float: left;
-        margin: 10px 15px 65px 0;
+      @include from('s') {
+        margin-top: 0;
+        &:before {
+          float: left;
+          margin: 10px 15px 65px 0;
+        }
       }
     }
   }
   .technology-title {
-    margin-top: 0;
     min-height: initial;
+    @include from('s') {
+      margin-top: 0;
+    }
   }
 
   .get-pricelist {

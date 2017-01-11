@@ -2,62 +2,144 @@ footer {
   padding: 40px 0;
   background-color: #14a758;
   color: #ffffff;
+  overflow-x: hidden;
+  .pull-left {
+    @include from('m') {
+      width: 25%;
+    }
+    @include to('s') {
+      width: 50%;
+    }
+  }
   a {
     color: inherit;
   }
-}
 
-.footer-head {
-  margin-bottom: 20px;
-  @include clearfix;
-  &__contacts {
+  .logo {
+    padding-right: 15px;
+    @include to('xs') {
+      max-width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  .comos-group {
+    @include from('s') {
+      position: absolute;
+      right: 15px;
+      top: 0;
+      width: auto;
+    }
+    @include to('xs') {
+      max-width: 50%;
+      padding-left: 15px;
+    }
+    @include at('s') {
+      img {
+        max-width: 85%;
+      }
+    }
+    div {
+      font-size: 9px;
+      text-transform: uppercase;
+      margin-bottom: 3px;
+      white-space: nowrap;
+      @include from('s') {
+        display: block;
+        text-align: justify;
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .contacts {
     .phone {
-      font-size: 20px;
       @include FranklinGothicMedium;
+      @include from('m') {
+        font-size: 20px;
+      }
     }
   }
-  .link-dashed {
-    padding: 0;
-    color: #fff;
-    font-size: 14px;
-    &:hover {
-      color: #f17f21;
-    }
-  }
-  .third-block {
+
+  .social-block {
+    padding-left: 0;
     margin: 0;
     list-style: none;
     .we-vk {
       margin-left: 5px;
     }
   }
+
+  .container {
+    position: relative;
+  }
+}
+
+.footer-head {
+  margin-bottom: 20px;
+  @include clearfix;
+  .link-dashed {
+    padding: 0;
+    color: #fff;
+    font-size: 14px;
+
+    @include to('s') {
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    &:hover {
+      color: #f17f21;
+    }
+  }
 }
 
 .footer-menu {
-  @include clearfix;
   a {
     border-bottom: 1px solid;
     &:hover {
       color: #f17f21;
     }
   }
+  .h3 {
+    padding-left: 0;
+    @include to('xs') {
+      padding-bottom: 10px;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
   &__list {
     margin: 0;
-    padding: 0;
+    padding-right: 0;
+    padding-left: 0;
     list-style: none;
-    text-align: justify;
-    font-size: 0;
-    line-height: 0;
-    *text-align-last: justify;
-    *zoom: 1;
-    li {
-      text-align: left;
-      font-size: 16px;
-      line-height: normal;
-      display: inline-block;
-      *display: inline;
+    @include from('s') {
+      padding-left: 15px;
+      text-align: justify;
+      font-size: 0;
+      line-height: 0;
+      *text-align-last: justify;
       *zoom: 1;
-      vertical-align: top;
+    }
+    li {
+      @include from('s') {
+        text-align: left;
+        font-size: 16px;
+        line-height: normal;
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+      }
+      @include to('s') {
+        margin-bottom: 10px;
+      }
     }
     &:after {
       content: '';

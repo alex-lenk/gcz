@@ -2,6 +2,9 @@
   padding: 55px 0;
   background-color: #f2f2f2;
   text-align: center;
+  @include to('xs') {
+    padding-bottom: 0;
+  }
   &__title {
     margin: 0 0 5px;
     line-height: 1;
@@ -17,10 +20,14 @@
     position: relative;
     @include clearfix;
     li {
-      width: 50%;
-      height: 220px;
-      padding: 20px 75px;
-      float: left;
+      margin-bottom: 40px;
+      @include from('s') {
+        width: 50%;
+        height: 220px;
+        padding: 20px 75px;
+        margin-bottom: 0;
+        float: left;
+      }
       &:before {
         font-size: 85px;
       }
@@ -42,15 +49,20 @@
         color: #ff444a
       }
     }
+
+    @include from('s') {
+      .icon-high-volume,
+      .icon-deferment-payment {
+        padding-top: 40px;
+      }
+    }
     .icon-high-volume {
-      padding-top: 40px;
       border-right: 1px solid #ece8e1;
       &:before {
         color: #0073b9
       }
     }
     .icon-deferment-payment {
-      padding-top: 40px;
       &:before {
         color: #99b200
       }
@@ -58,13 +70,15 @@
 
     .become {
       padding: 0;
-      margin: -95px 0 0 -95px;
       font-size: 20px;
       text-transform: uppercase;
-      position: absolute;
-      top: 50%;
-      left: 50%;
       @include FranklinGothicMedium;
+      @include from('s') {
+        margin: -95px 0 0 -95px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
       a {
         width: 190px;
         height: 190px;
@@ -74,6 +88,9 @@
         align-items: center;
         justify-content: center;
         color: #ffffff;
+        @include to('xs') {
+          margin: auto;
+        }
         &:hover {
           background-color: #f17f21;
         }

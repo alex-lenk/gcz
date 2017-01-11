@@ -28,14 +28,24 @@
   width: 100%;
   padding: 20px;
   text-align: center;
+  display: block;
   @include from('l') {
     display: none;
   }
+  @include to('xs') {
+    width: 540px;
+    padding: 20px 0 20px 15px;
+    margin: 0 0 0 -15px;
+    text-align: left;
+  }
   .icon-list {
+    font-size: 18px;
     color: #ffffff;
-    font-size: 20px;
-    letter-spacing: 1px;
     @include FranklinGothicMedium;
+    @include from('s') {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
     &:before {
       font-size: 60px;
       margin-right: 15px;
@@ -46,7 +56,11 @@
 }
 
 .general-form {
-  padding: 20px 45px;
+  padding: 20px 15px;
+  @include from('s') {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
   .modal-title {
     margin: 0 0 20px;
     text-align: center;
