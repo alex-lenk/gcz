@@ -19,9 +19,23 @@ var gulp = require('gulp'),
     replace = require('gulp-replace'),
     rimraf = require('rimraf'),
     postcss = require('gulp-postcss'),
+    csswring = require('csswring'),
     mqpacker = require("css-mqpacker"),
     create = browserSync.create(),
     reload = browserSync.reload;
+
+
+/*gulp.task('css', function () {
+    var processors = [
+        mqpacker({
+            sort: true
+        }),
+        csswring
+    ];
+    return gulp.src('./build/styles/main.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./build/css/'));
+});*/
 
 var path = {
         build: { //Тут мы укажем куда складывать готовые после сборки файлы

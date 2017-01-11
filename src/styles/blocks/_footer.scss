@@ -120,7 +120,6 @@ footer {
     padding-left: 0;
     list-style: none;
     @include from('s') {
-      padding-left: 15px;
       text-align: justify;
       font-size: 0;
       line-height: 0;
