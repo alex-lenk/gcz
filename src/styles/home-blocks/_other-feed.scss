@@ -4,9 +4,14 @@
   @include to('m') {
     padding-bottom: 50px;
   }
-  .animal-feed__list > li {
-    margin-bottom: 85px;
-    padding-left: 10px;
+  .animal-feed__list {
+    margin-bottom: 0;
+    li {
+      padding-left: 10px;
+      &:not(:last-child) {
+        margin-bottom: 85px;
+      }
+    }
   }
   .for-cow:after {
     width: 273px;

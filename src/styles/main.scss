@@ -12,27 +12,34 @@
 @import "partials/grid";
 /* common-blocks */
 @import "common-blocks/nav";
-@import "common-blocks/nav-panel";
+@import "common-blocks/top-panel";
 @import "common-blocks/search-area";
 @import "common-blocks/technology";
 @import "common-blocks/manufactured";
 @import "common-blocks/footer";
 /* home-blocks */
 @import "home-blocks/header-home";
-@import "home-blocks/advantages";
+@import "home-blocks/main-advantages";
 @import "home-blocks/animal-feed";
 @import "home-blocks/other-feed";
 @import "home-blocks/become-agent";
 @import "home-blocks/news-carousel";
+/* page-blocks */
+@import "page-blocks/breadcrumbs-pages";
+@import "page-blocks/inner-pages-menu";
+@import "page-blocks/production-indicators";
 
 .home-page {
   .main-content {
+    padding-top: 0;
+    padding-bottom: 0;
     margin-top: 318px;
   }
 }
 
 .wrapper {
   position: relative;
+  z-index: 2;
   @include from('l') {
     &:before {
       height: 100%;
@@ -46,13 +53,34 @@
       box-shadow: 4px 0 7px 0 rgba(0, 0, 0, 0.3);
     }
   }
+  @include to('m') {
+    overflow-x: hidden;
+    &:after {
+      display: none;
+    }
+  }
 }
 
 .main-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: relative;
   @include from('l') {
     width: 75%;
-    padding: 0 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     float: right;
+  }
+  h1 {
+    margin-bottom: 45px;
+  }
+}
+
+.page-content {
+  a {
+    border-bottom: 1px solid;
+    &:hover {
+      border-color: transparent;
+    }
   }
 }

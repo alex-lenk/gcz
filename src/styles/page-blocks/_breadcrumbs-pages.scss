@@ -1,0 +1,25 @@
+.breadcrumbs-pages {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+  @include from('l') {
+    margin-bottom: 15px;
+  }
+  li {
+    display: inline-block;
+    font-size: 14px;
+    &:not(:last-child) {
+      margin-right: 10px;
+      &:after {
+        content: '/';
+        margin-left: 15px;
+      }
+    }
+    a {
+      border-bottom: 1px solid;
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
+}

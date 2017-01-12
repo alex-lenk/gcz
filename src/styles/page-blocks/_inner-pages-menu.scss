@@ -1,0 +1,20 @@
+.inner-pages-menu {
+  margin: 0 0 40px;
+  padding: 25px 20px 15px;
+  list-style: none;
+  background-color: #f2f2f2;
+  li {
+    margin-bottom: 10px;
+    @include from('m') {
+      display: inline-block;
+      vertical-align: top;
+      &:not(:last-child) {
+        margin-right: 10px;
+        &:after {
+          content: '|';
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

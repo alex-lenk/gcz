@@ -1,0 +1,73 @@
+@mixin production-indicators($x: 0, $y: 0, $width: 0, $height: 0) {
+  background: url(../images/production-indicators.png) no-repeat;
+  background-position: $x $y;
+  width: $width;
+  height: $height;
+  content: '';
+  display: block;
+  margin: 0 auto;
+}
+
+.sprite-mixed-feed:before {
+  @include production-indicators(-154px, -119px, 103px, 110px);
+}
+
+.sprite-milk:before {
+  @include production-indicators(-154px, -5px, 96px, 104px);
+}
+
+.sprite-meat:before {
+  @include production-indicators(-5px, -90px, 139px, 92px);
+}
+
+.sprite-egg:before {
+  @include production-indicators(-5px, 15px, 125px, 85px);
+}
+
+.production-indicators {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @include clearfix;
+  li {
+    width: 49%;
+    margin-bottom: 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    &:before {
+      min-height: 110px;
+    }
+    @include from('l') {
+      width: 25%;
+      float: left;
+    }
+    @include to('xs') {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__pedestal {
+    margin-bottom: 15px;
+    display: inline-block;
+    text-align: left;
+    color: #f17f21;
+    @include clearfix;
+    .place {
+      float: left;
+      margin-right: 10px;
+      font-size: 59px;
+      line-height: 1;
+      @include FranklinGothicMedium;
+    }
+    .text {
+      margin-top: 8px;
+      display: inline-block;
+      font-size: 17px;
+    }
+  }
+  &__content {
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+}

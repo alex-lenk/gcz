@@ -1,11 +1,14 @@
-.advantages {
+.main-advantages {
   padding-top: 0;
   background: url("../images/bg-layer.jpg") repeat-x top center #f5c78b;
-  &:before, &:after {
-    background: inherit;
-  }
   @include to('m') {
     height: 240px;
+  }
+  @include to('xs') {
+    margin: 0 -15px;
+  }
+  &:before, &:after {
+    background: inherit;
   }
   &-decor {
     padding: 70px 0 45px;
@@ -41,23 +44,29 @@
         right: 0;
         background: url(../images/provender-6.png) no-repeat center 155px, url(../images/provender-3.png) no-repeat 100% 0;
       }
-      @include to('s') {
+      @include at('s') {
         height: 392px;
         top: -152px;
         background: url(../images/provender-6.png) no-repeat center 209px, url(../images/provender-3.png) no-repeat 100% 0;
         background-size: contain, 40%;
       }
+      @include to('xs') {
+        height: 298px;
+        top: -58px;
+        background: url(../images/provender-6.png) no-repeat center 173px, url(../images/provender-3.png) no-repeat 100% 0;
+        background-size: 164% 72%, 40%;
+      }
     }
   }
 
   ul {
-    padding: 0;
     list-style: none;
   }
   &-list {
     display: none;
     @include from('l') {
       margin: 0;
+      padding: 0;
       position: relative;
       display: block;
       z-index: 6;
@@ -80,6 +89,7 @@
   }
   &-points {
     margin: 0 auto;
+    padding: 0;
     position: relative;
     z-index: 7;
     text-transform: uppercase;
@@ -91,6 +101,9 @@
     }
     @include from('l') {
       display: none;
+    }
+    @include to('xs') {
+      padding-left: 15px;
     }
     li {
       margin-bottom: 10px;
