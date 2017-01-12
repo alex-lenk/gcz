@@ -1,9 +1,13 @@
 .advantages {
-  background: url("../images/bg-layer.jpg") repeat-x top right;
+  padding-top: 0;
+  background: url("../images/bg-layer.jpg") repeat-x top center #f5c78b;
+  &:before, &:after {
+    background: inherit;
+  }
   @include to('m') {
     height: 240px;
   }
-  .section-right {
+  &-decor {
     padding: 70px 0 45px;
     position: relative;
     @include to('m') {
@@ -38,8 +42,8 @@
         background: url(../images/provender-6.png) no-repeat center 155px, url(../images/provender-3.png) no-repeat 100% 0;
       }
       @include to('s') {
-        height: 290px;
-        top: -50px;
+        height: 392px;
+        top: -152px;
         background: url(../images/provender-6.png) no-repeat center 209px, url(../images/provender-3.png) no-repeat 100% 0;
         background-size: contain, 40%;
       }

@@ -2,69 +2,57 @@
 @import 'lib/breakpoint';
 @import 'lib/breakpoint-slicer';
 //common
-@import "common/mixin";
-@import "common/fonts";
-@import "common/common";
-@import "common/icons";
-@import "common/forms";
-@import "common/checkbox-custom";
-@import "common/buttons";
-@import "common/grid";
-/* blocks */
-@import "blocks/section-block";
-@import "blocks/navigation";
-@import "blocks/search-area";
-@import "blocks/technology";
-@import "blocks/header-home";
-@import "blocks/advantages";
-@import "blocks/animal-feed";
-@import "blocks/other-feed";
-@import "blocks/manufactured";
-@import "blocks/become-agent";
-@import "blocks/footer";
-@import "blocks/news-carousel";
+@import "partials/mixin";
+@import "partials/fonts";
+@import "partials/common";
+@import "partials/icons";
+@import "partials/forms";
+@import "partials/checkbox-custom";
+@import "partials/buttons";
+@import "partials/grid";
+/* common-blocks */
+@import "common-blocks/nav";
+@import "common-blocks/nav-panel";
+@import "common-blocks/search-area";
+@import "common-blocks/technology";
+@import "common-blocks/manufactured";
+@import "common-blocks/footer";
+/* home-blocks */
+@import "home-blocks/header-home";
+@import "home-blocks/advantages";
+@import "home-blocks/animal-feed";
+@import "home-blocks/other-feed";
+@import "home-blocks/become-agent";
+@import "home-blocks/news-carousel";
 
-.get-pricelist {
-  width: 100%;
-  padding: 20px;
-  text-align: center;
-  display: block;
+.home-page {
+  .main-content {
+    margin-top: 318px;
+  }
+}
+
+.wrapper {
+  position: relative;
   @include from('l') {
-    display: none;
-  }
-  @include to('xs') {
-    width: 540px;
-    padding: 20px 0 20px 15px;
-    margin: 0 0 0 -15px;
-    text-align: left;
-  }
-  .icon-list {
-    font-size: 18px;
-    color: #ffffff;
-    @include FranklinGothicMedium;
-    @include from('s') {
-      font-size: 20px;
-      letter-spacing: 1px;
-    }
     &:before {
-      font-size: 60px;
-      margin-right: 15px;
-      display: inline-block;
-      vertical-align: middle;
+      height: 100%;
+      width: 1430px;
+      position: absolute;
+      top: 0;
+      left: -1200px;
+      content: '';
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 5;
+      box-shadow: 4px 0 7px 0 rgba(0, 0, 0, 0.3);
     }
   }
 }
 
-.general-form {
-  padding: 20px 15px;
-  @include from('s') {
-    padding-right: 45px;
-    padding-left: 45px;
-  }
-  .modal-title {
-    margin: 0 0 20px;
-  }
-  .button-default {
-    width: 100%;
+.main-content {
+  position: relative;
+  @include from('l') {
+    width: 75%;
+    padding: 0 10px;
+    float: right;
   }
 }

@@ -1,5 +1,5 @@
 .become-agent {
-  padding: 55px 0;
+  padding-bottom: 55px;
   background-color: #f2f2f2;
   text-align: center;
   @include to('xs') {
@@ -19,6 +19,18 @@
     list-style: none;
     position: relative;
     @include clearfix;
+    @include from('s') {
+      .icon-certificate {
+        border-bottom: 1px solid #ece8e1;
+        border-right: 1px solid #ece8e1;
+      }
+      .icon-percentage {
+        border-bottom: 1px solid #ece8e1;
+      }
+      .icon-deferment-payment {
+        border-right: 1px solid #ece8e1;
+      }
+    }
     li {
       margin-bottom: 40px;
       @include from('s') {
@@ -37,17 +49,12 @@
       text-transform: uppercase;
     }
     .icon-certificate {
-      border-bottom: 1px solid #ece8e1;
-      border-right: 1px solid #ece8e1;
       &:before {
         color: #f8c343
       }
     }
-    .icon-percentage {
-      border-bottom: 1px solid #ece8e1;
-      &:before {
-        color: #ff444a
-      }
+    .icon-percentage:before {
+      color: #ff444a
     }
 
     @include from('s') {
@@ -56,16 +63,11 @@
         padding-top: 40px;
       }
     }
-    .icon-high-volume {
-      border-right: 1px solid #ece8e1;
-      &:before {
-        color: #0073b9
-      }
+    .icon-high-volume:before {
+      color: #0073b9
     }
-    .icon-deferment-payment {
-      &:before {
-        color: #99b200
-      }
+    .icon-deferment-payment:before {
+      color: #99b200
     }
 
     .become {

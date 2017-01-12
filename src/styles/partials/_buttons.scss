@@ -37,6 +37,14 @@ button {
       height: 100%;
       content: '';
       position: absolute;
+      z-index: 6;
+      @include to('xs') {
+        width: 104%;
+        background-color: #f17f21;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
     }
     &:before {
       padding: 6px 0;

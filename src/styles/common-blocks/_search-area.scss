@@ -7,11 +7,11 @@
     background-color: #ffffff;
   }
   @include from('l') {
-    text-align: right;
-    padding-top: 20px;
-    position: relative;
-    float: right;
+    position: absolute;
     z-index: 4;
+    right: 10px;
+    top: 20px;
+    opacity: .8;
   }
   &__active, &:hover {
     @include to('m') {

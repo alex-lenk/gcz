@@ -2,6 +2,7 @@ body {
   color: #282828;
   font-size: 16px;
   line-height: 1.4;
+  overflow-x: hidden;
   @include SegoeUI;
 }
 
@@ -165,7 +166,7 @@ blockquote .small:before {
 }
 
 // @todo deleted .table?
-.table {
+/*.table {
   display: table;
   &-thead {
     display: table-header-group
@@ -191,9 +192,74 @@ blockquote .small:before {
   &-caption {
     display: table-caption
   }
+}*/
+
+.inner-pattern {
+  padding-top: 45px;
+  position: relative;
+  &:after, &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 150rem;
+    top: 0;
+    background-color: inherit;
+  }
+  &:after {
+    right: 100%;
+  }
+  &:before {
+    left: 100%;
+  }
 }
 
-.wrapping {
-  position: relative;
-  overflow-x: hidden;
+.get-pricelist {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: block;
+  @include from('l') {
+    display: none;
+  }
+  @include to('xs') {
+    width: 100%;
+    display: block;
+    padding: 20px 15px 20px;
+    margin: 0 0 0 -15px;
+    box-sizing: content-box;
+    text-align: left;
+  }
+  .icon-list {
+    font-size: 18px;
+    color: #ffffff;
+    position: relative;
+    z-index: 3;
+    @include FranklinGothicMedium;
+    @include from('s') {
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+    &:before {
+      font-size: 60px;
+      margin-right: 15px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 }
+
+.general-form {
+  padding: 20px 15px;
+  @include from('s') {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+  .modal-title {
+    margin: 0 0 20px;
+  }
+  .button-default {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,42 @@
+.nav-panel {
+  position: relative;
+  z-index: 9;
+  @include from('l') {
+    padding-top: 40px;
+  }
+  @include to('m') {
+    height: 55px;
+    padding-left: 45px;
+    margin: 0 -15px;
+    background-color: #ffffff;
+    .burger-menu-activate {
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      &:before {
+        color: #14a758;
+      }
+      &:not(.icon-cancel):after {
+        height: 1px;
+        content: '';
+        display: block;
+        background-color: #14a758;
+        box-shadow: 0 5px 0 0 #14a758, 0 10px 0 0 #14a758;
+      }
+    }
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+      padding-top: 15px;
+      margin-left: 15px;
+      img {
+        width: 130px;
+      }
+    }
+  }
+  @include to('s') {
+    padding-left: 15px;
+  }
+}

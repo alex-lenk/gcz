@@ -25,13 +25,14 @@ footer {
   }
 
   .comos-group {
-    @include from('s') {
+    @include from('m') {
       position: absolute;
       right: 15px;
       top: 0;
       width: auto;
     }
-    @include to('xs') {
+    @include to('s') {
+      min-height: 100px;
       max-width: 50%;
       padding-left: 15px;
     }
@@ -72,6 +73,9 @@ footer {
     list-style: none;
     .we-vk {
       margin-left: 5px;
+    }
+    @include to('s') {
+      text-align: right;
     }
   }
 
