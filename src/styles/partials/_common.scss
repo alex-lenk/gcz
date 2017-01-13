@@ -116,11 +116,35 @@ h6 {
   }
 }
 
+ul,
+ol {
+  margin-bottom: 10px;
+}
+
 ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
+}
+
+.list {
+  &-unstyled {
+    padding-left: 0;
+    list-style: none;
+  }
+  &-orange {
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin-bottom: 10px;
+      &:before {
+        color: #f17f21;
+        content: "•";
+        padding-right: 5px;
+      }
+    }
+  }
 }
 
 abbr[title],
@@ -197,35 +221,6 @@ blockquote .small:before {
   padding-bottom: 75%;
 }
 
-// @todo deleted .table?
-/*.table {
-  display: table;
-  &-thead {
-    display: table-header-group
-  }
-  &-tbody {
-    display: table-row-group
-  }
-  &-tfoot {
-    display: table-footer-group
-  }
-  &-col {
-    display: table-column
-  }
-  &-colgroup {
-    display: table-column-group
-  }
-  &-tr {
-    display: table-row
-  }
-  &-td, &-th {
-    display: table-cell
-  }
-  &-caption {
-    display: table-caption
-  }
-}*/
-
 .inner-pattern {
   padding-top: 45px;
   position: relative;
@@ -258,8 +253,6 @@ blockquote .small:before {
     width: 100%;
     display: block;
     padding: 20px 15px 20px;
-    margin: 0 0 0 -15px;
-    box-sizing: content-box;
     text-align: left;
   }
   .icon-list {

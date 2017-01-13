@@ -1,0 +1,30 @@
+.support-department {
+  margin-top: 50px;
+  @include to('s') {
+    .info-right {
+      padding: 0 0 10px 10px;
+    }
+  }
+  .info-left,
+  .info-right {
+    padding-top: 10px;
+    color: #ffffff;
+    position: relative;
+    z-index: 7;
+    @include from('m') {
+      width: 49%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  li {
+    margin-bottom: 5px;
+    padding-left: 40px;
+    position: relative;
+    &:before {
+      font-size: 22px;
+      position: absolute;
+      left: 0;
+    }
+  }
+}

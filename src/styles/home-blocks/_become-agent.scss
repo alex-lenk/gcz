@@ -18,16 +18,16 @@
     padding: 0;
     list-style: none;
     position: relative;
-    @include clearfix;
+    overflow: hidden;
     @include from('s') {
-      .icon-certificate {
+      li:first-child {
         border-bottom: 1px solid #ece8e1;
         border-right: 1px solid #ece8e1;
       }
-      .icon-percentage {
+      .border-b {
         border-bottom: 1px solid #ece8e1;
       }
-      .icon-deferment-payment {
+      .border-r {
         border-right: 1px solid #ece8e1;
       }
     }

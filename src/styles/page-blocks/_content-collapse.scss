@@ -1,0 +1,37 @@
+.content-collapse {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  li {
+    @include from('m') {
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  &-title {
+    margin: 0 0 25px;
+    color: #14a758;
+    cursor: pointer;
+    display: inline-block;
+    &:after {
+      padding-left: 5px;
+      display: inline;
+      font-size: 12px;
+      content: $icon-top;
+      @include icomoon;
+    }
+    &:hover {
+      color: #f17f21;
+      .link-dashed {
+        color: inherit;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+  .collapsed {
+    &:after {
+      content: $icon-bottom;
+    }
+  }
+}
