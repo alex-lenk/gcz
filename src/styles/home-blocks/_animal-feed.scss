@@ -66,29 +66,4 @@
       }
     }
   }
-
-  &__info {
-    display: none;
-    @include from('l') {
-      padding: 15px 40px;
-      display: flex;
-      align-items: center;
-      .info-left {
-        margin-right: 30px;
-        color: #ffffff;
-        &__percent {
-          font-size: 48px;
-          @include FranklinGothicMedium;
-        }
-        &__text {
-          text-transform: uppercase;
-        }
-      }
-      .info-center {
-        font-style: italic;
-        font-size: 14px;
-        text-align: left;
-      }
-    }
-  }
 }

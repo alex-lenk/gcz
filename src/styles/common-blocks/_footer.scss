@@ -3,6 +3,19 @@ footer {
   background-color: #14a758;
   color: #ffffff;
   overflow-x: hidden;
+  a {
+    color: inherit;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+.footer-head {
+  margin-bottom: 20px;
+  @include clearfix;
+
   .pull-left {
     @include from('m') {
       width: 25%;
@@ -11,50 +24,28 @@ footer {
       width: 50%;
     }
   }
-  a {
-    color: inherit;
-  }
 
   .logo {
     padding-right: 15px;
     @include to('xs') {
-      max-width: 100%;
       float: none;
       margin-bottom: 20px;
+      width: 75%;
     }
   }
 
   .comos-group {
     @include from('m') {
       position: absolute;
-      right: 15px;
+      right: 0;
       top: 0;
       width: auto;
     }
+    @include to('m') {
+      right: 15px;
+    }
     @include to('s') {
-      min-height: 100px;
-      max-width: 50%;
       padding-left: 15px;
-    }
-    @include at('s') {
-      img {
-        max-width: 85%;
-      }
-    }
-    div {
-      font-size: 9px;
-      text-transform: uppercase;
-      margin-bottom: 3px;
-      white-space: nowrap;
-      @include from('s') {
-        display: block;
-        text-align: justify;
-        &:after {
-          content: "";
-          display: inline-block;
-          width: 100%;
-        }
-      }
     }
   }
 
@@ -79,14 +70,6 @@ footer {
     }
   }
 
-  .container {
-    position: relative;
-  }
-}
-
-.footer-head {
-  margin-bottom: 20px;
-  @include clearfix;
   .link-dashed {
     padding: 0;
     color: #fff;
@@ -150,6 +133,53 @@ footer {
       width: 100%;
       height: 0;
       visibility: hidden;
+    }
+  }
+}
+
+.footer-other-info {
+  padding-top: 30px;
+  clear: left;
+  @include to('xs') {
+    .pull-left {
+      margin-bottom: 20px;
+    }
+    .pull-left, .pull-right {
+      float: none;
+    }
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+#toTop {
+  width: 60px;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 50%;
+  color: #14a758;
+  position: fixed;
+  bottom: 400px;
+  right: 50px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  &:hover {
+    color: #f17f21;
+  }
+  .icon-top {
+    width: 100%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 30px;
+    &:last-of-type {
+      top: 10px;
     }
   }
 }

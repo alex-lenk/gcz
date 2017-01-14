@@ -1,9 +1,6 @@
 .main-advantages {
   padding-top: 0;
   background: url("../images/bg-layer.jpg") repeat-x top center #f5c78b;
-  @include to('m') {
-    height: 240px;
-  }
   @include to('xs') {
     margin: 0 -15px;
   }
@@ -11,20 +8,11 @@
     background: inherit;
   }
   &-decor {
-    padding: 70px 0 45px;
+    height: 240px;
+    padding: 35px 0 0;
     position: relative;
     @include to('m') {
       padding-top: 35px;
-    }
-    @include from('l') {
-      &:before {
-        width: 286px;
-        height: 136px;
-        top: 0;
-        left: -20px;
-        opacity: .8;
-        background: url("../images/provender-2.png") no-repeat;
-      }
     }
     &:before, &:after {
       position: absolute;
@@ -33,74 +21,23 @@
     }
     &:after {
       width: 100%;
-      height: 340px;
-      top: -100px;
-      @include from('l') {
-        width: 395px;
-        right: -170px;
-        background: url(../images/provender.png) no-repeat 0 145px, url(../images/provender-3.png) no-repeat 83% 0;
-      }
-      @include at('m') {
-        right: 0;
-        background: url(../images/provender-6.png) no-repeat center 155px, url(../images/provender-3.png) no-repeat 100% 0;
-      }
-      @include at('s') {
-        height: 392px;
-        top: -152px;
-        background: url(../images/provender-6.png) no-repeat center 209px, url(../images/provender-3.png) no-repeat 100% 0;
-        background-size: contain, 40%;
-      }
+      height: 330px;
+      top: -90px;
+      background: url(../images/provender-6.png) no-repeat center 150px;
       @include to('xs') {
-        height: 298px;
-        top: -58px;
-        background: url(../images/provender-6.png) no-repeat center 173px, url(../images/provender-3.png) no-repeat 100% 0;
-        background-size: 164% 72%, 40%;
-      }
-    }
-  }
-
-  ul {
-    list-style: none;
-  }
-  &-list {
-    display: none;
-    @include from('l') {
-      margin: 0;
-      padding: 0;
-      position: relative;
-      display: block;
-      z-index: 6;
-      li {
-        display: inline-block;
-        text-transform: uppercase;
-        text-align: center;
-        font-weight: 300;
-        &:not(:last-child) {
-          margin-right: 35px;
-        }
-        &:before {
-          margin: 0 auto 20px;
-          display: block;
-          color: #14a758;
-          font-size: 60px;
-        }
+        height: 283px;
+        top: -43px;
       }
     }
   }
   &-points {
-    margin: 0 auto;
-    padding: 0;
     position: relative;
     z-index: 7;
     text-transform: uppercase;
     font-weight: 300;
-    @include between('s', 'm') {
-      width: 500px;
+    @include from('s') {
       display: flex;
-      justify-content: flex-end;
-    }
-    @include from('l') {
-      display: none;
+      justify-content: center;
     }
     @include to('xs') {
       padding-left: 15px;
@@ -113,31 +50,38 @@
         &:after {
           width: 60px;
           height: 1px;
-          margin: 22px 0 0 -48px;
           background-color: #ffffff;
-          display: block;
+          position: absolute;
+          left: -41px;
+          bottom: -18px;
           content: '';
-          transform: rotate(130deg);
+          transform: rotate(112deg);
         }
         &:first-child {
           margin-top: 5px;
-          padding-left: 20px;
-          flex-grow: 1;
           &:after {
-            margin: 20px 0 0 65px;
-            transform: rotate(45deg);
+            right: -42px;
+            bottom: -22px;
+            left: auto;
+            transform: rotate(65deg);
           }
           &:before {
-            right: 71px;
+            bottom: -65px;
+            right: -35px;
             left: auto;
           }
         }
+        &:nth-child(2) {
+          margin: 0 45px 0 80px;
+        }
         &:last-child {
-          padding-left: 35px;
           margin-top: 10px;
           &:before {
-            bottom: -28px;
-            left: -7px;
+            bottom: -63px;
+            left: -29px;
+          }
+          &:after {
+            bottom: -29px;
           }
         }
         span {
@@ -156,8 +100,8 @@
         margin-right: 10px;
         @include from('s') {
           position: absolute;
-          bottom: -16px;
-          left: -40px;
+          bottom: -45px;
+          left: -25px;
           margin-right: 0;
         }
       }

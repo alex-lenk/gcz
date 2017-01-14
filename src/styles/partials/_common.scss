@@ -249,9 +249,6 @@ blockquote .small:before {
   padding: 20px;
   text-align: center;
   display: block;
-  @include from('l') {
-    display: none;
-  }
   @include to('xs') {
     width: 100%;
     display: block;
