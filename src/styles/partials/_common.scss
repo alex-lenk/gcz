@@ -144,6 +144,20 @@ ol ol {
       }
     }
   }
+  &-hyphen {
+    list-style: none;
+    padding-left: 0;
+    li {
+      padding-left: 12px;
+      margin-bottom: 10px;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 0;
+        content: "-";
+      }
+    }
+  }
 }
 
 abbr[title],

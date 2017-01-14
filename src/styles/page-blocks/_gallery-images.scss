@@ -1,0 +1,29 @@
+.gallery-images {
+  li {
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 40px;
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    &:hover {
+      img {
+        border-color: #f17f21;
+      }
+      .gallery-images-title {
+        color: #f17f21;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+  img {
+    padding: 0 20px;
+    border: 2px solid #f2f2f2;
+    transition: all 0.3s ease;
+  }
+  &-title {
+    padding-top: 20px;
+    border-bottom: 1px solid;
+    display: inline-block;
+  }
+}

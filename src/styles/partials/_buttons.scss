@@ -69,4 +69,17 @@ button {
       background: url("../images/repeat-t-b.png") repeat-x top left, url("../images/repeat-t-b.png") repeat-x bottom left;
     }
   }
+
+  /* button-show-more */
+  &-show-more {
+    font-size: 24px;
+    color: #14a758;
+    @include FranklinGothicMedium;
+    .icon-bottom {
+      font-size: 16px;
+    }
+    &:hover {
+      color: #f17f21;
+    }
+  }
 }

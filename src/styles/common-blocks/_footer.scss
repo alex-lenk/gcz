@@ -168,6 +168,7 @@ footer {
   cursor: pointer;
   display: none;
   text-align: center;
+  z-index: 99;
   transition: all 0.3s ease;
   &:hover {
     color: #f17f21;
