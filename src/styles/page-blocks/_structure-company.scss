@@ -1,0 +1,120 @@
+.structure-company {
+  margin-bottom: 100px;
+  .title {
+    margin: 0;
+    @include to('xs') {
+      font-size: 14px;
+    }
+  }
+  img {
+    margin: 0 auto 20px;
+    display: block;
+  }
+  li {
+    position: relative;
+    &:before, &:after {
+      background-color: #ece8e1;
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &:first-child, &:nth-child(2) {
+      .title {
+        padding: 0 0 20px;
+      }
+      &:after {
+        width: 2px;
+        height: 40px;
+      }
+    }
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(3), &:nth-child(4), &:last-child {
+      &:before {
+        width: 2px;
+        height: 40px;
+      }
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    @include from('s') {
+      &:first-child, &:nth-child(2) {
+        margin-bottom: 20px;
+      }
+
+      &:nth-child(3), &:nth-child(4), &:last-child {
+        &:after {
+          width: 50%;
+          height: 2px;
+        }
+      }
+
+      &:nth-child(3) {
+        &:after {
+          right: 0;
+          left: auto;
+        }
+      }
+
+      &:nth-child(4) {
+        &:after {
+          width: 100%;
+        }
+      }
+    }
+
+    @include to('xs') {
+      &:nth-child(2):before {
+        width: 50%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &:nth-child(3), &:nth-child(4), &:last-child {
+        width: 100%;
+        text-align: left;
+        padding: 0 0 20px;
+        &:before {
+          width: 40px;
+          height: 2px;
+        }
+        &:after {
+          width: 2px;
+          height: 100%;
+          right: auto;
+        }
+        .title {
+          max-width: 170px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-top: 60px;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        &:after {
+          height: 50%;
+        }
+      }
+    }
+  }
+}

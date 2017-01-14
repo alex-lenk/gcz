@@ -1,0 +1,82 @@
+.staff-contacts {
+  li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  &-photo {
+    width: 216px;
+    height: 216px;
+    padding: 0;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+    background-image: url("../images/staff-photo-default.png");
+    @include to('s') {
+      margin: 0 auto 15px;
+      float: none;
+    }
+    &:before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 4;
+      content: '';
+      background-image: inherit;
+      transition: all 0.3s ease;
+    }
+    &:after {
+      width: 100%;
+      height: 100%;
+      display: block;
+      content: '';
+      background-size: contain;
+      position: relative;
+      z-index: 5;
+      transition: all 0.3s ease;
+    }
+    &:hover {
+      &:after {
+        width: 140px;
+        height: 140px;
+        background-image: inherit;
+      }
+      &:before {
+        filter: blur(6px);
+      }
+    }
+  }
+  &-content {
+    padding-left: 20px;
+    @include to('s') {
+      width: 100%;
+    }
+    @include from('m') {
+      p {
+        margin-bottom: 30px;
+      }
+    }
+    .full-name {
+      margin: 0 0 10px;
+      @include to('s') {
+        text-align: center;
+      }
+    }
+    .contacts {
+      li {
+        margin-bottom: 10px;
+        &:before {
+          margin-right: 15px;
+          font-size: 22px;
+          color: #f17f21;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
