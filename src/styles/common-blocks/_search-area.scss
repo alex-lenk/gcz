@@ -78,6 +78,9 @@
     z-index: 7;
     background-color: transparent;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &:before {
       font-size: 18px;
       color: #14a758;

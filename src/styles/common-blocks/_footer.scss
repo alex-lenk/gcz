@@ -157,19 +157,25 @@ footer {
 }
 
 #toTop {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border: 2px solid;
   border-radius: 50%;
   color: #14a758;
   position: fixed;
-  bottom: 400px;
-  right: 50px;
+  bottom: 300px;
+  right: 5px;
   cursor: pointer;
   display: none;
   text-align: center;
   z-index: 99;
   transition: all 0.3s ease;
+  @include from('l') {
+    width: 60px;
+    height: 60px;
+    right: 50px;
+    bottom: 400px;
+  }
   &:hover {
     color: #f17f21;
   }
@@ -179,6 +185,9 @@ footer {
     top: 3px;
     left: 0;
     font-size: 30px;
+    @include to('m') {
+      font-size: 10px;
+    }
     &:last-of-type {
       top: 10px;
     }
