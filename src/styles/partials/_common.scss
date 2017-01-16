@@ -306,3 +306,21 @@ blockquote .small:before {
   }
 }
 
+.modal-news {
+  .modal-content {
+    border-radius: 0;
+  }
+  .modal-dialog {
+    width: 600px;
+    margin: 60px auto 30px;
+  }
+  .close {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d5d2cc;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -50px;
+    right: 0;
+  }
+}

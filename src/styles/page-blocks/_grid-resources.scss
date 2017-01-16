@@ -4,12 +4,24 @@
     margin-top: 40px;
     padding: 0 40px;
     text-align: center;
+    cursor: pointer;
     @include from('s') {
       width: 33%;
       padding: 0 10px;
       float: left;
       text-align: left;
     }
+    &:hover {
+      .as-link {
+        border-bottom-color: transparent;
+      }
+      img {
+        opacity: .9;
+      }
+    }
+  }
+  .as-link {
+    border-bottom: 1px solid;
   }
   &-media {
     margin: 0 auto 20px;

@@ -26,6 +26,15 @@ $(document).ready(function () {
         loop: true
     });
 
+    $('#modalNewsCarousel').owlCarousel({
+        items: 1,
+        loop: true,
+        dots: false,
+        nav: true,
+        smartSpeed: 450,
+        navText: ['<span class="icon-preview"></span>','<span class="icon-next"></span>']
+    });
+
     // Кнопка вверх
     $(function () {
         $(window).scroll(function () {

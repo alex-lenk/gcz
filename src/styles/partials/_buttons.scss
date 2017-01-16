@@ -8,11 +8,10 @@ button {
 .button {
   border: 0;
   background: transparent;
-  text-transform: uppercase;
   text-align: center;
-  transition: .4s ease-in-out;
   cursor: pointer;
   line-height: 1;
+  transition: .4s ease-in-out;
 
   /* .button-default */
   &-default {
@@ -20,7 +19,6 @@ button {
     border-radius: 20px;
     color: #ffffff;
     background-color: #14a758;
-    text-transform: none;
     &:hover,
     &:active {
       background-color: #f17f21;
@@ -32,6 +30,7 @@ button {
   &-lines {
     background-color: #f17f21;
     position: relative;
+    text-transform: uppercase;
     @include to('xs') {
       margin: 0 0 0 -15px;
       box-sizing: content-box;

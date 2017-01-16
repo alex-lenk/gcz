@@ -1,0 +1,30 @@
+.modal-news-carousel {
+  overflow: hidden;
+  .owl-nav {
+    width: 100%;
+    top: 50%;
+    margin-top: -20px;
+    position: absolute;
+  }
+  .owl-prev, .owl-next {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d5d2cc;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      color: #14a758;
+    }
+  }
+  .owl-next {
+    right: 15px;
+  }
+  .owl-prev {
+    left: 15px;
+  }
+}
