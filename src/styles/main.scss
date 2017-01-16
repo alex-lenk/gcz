@@ -38,6 +38,12 @@
   .main-content {
     padding-top: 318px;
     padding-bottom: 0;
+    @include from('l') {
+      padding-top: 430px;
+    }
+    @include to('xs') {
+      padding-top: 380px;
+    }
   }
 }
 

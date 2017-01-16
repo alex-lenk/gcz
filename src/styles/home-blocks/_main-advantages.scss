@@ -1,6 +1,9 @@
 .main-advantages {
   padding-top: 0;
   background: url("../images/bg-layer.jpg") repeat-x top center #f5c78b;
+  @include to('m') {
+    margin: 0 -15px;
+  }
   @include to('xs') {
     margin: 0 -15px;
   }
@@ -18,6 +21,17 @@
       position: absolute;
       content: '';
       z-index: 5;
+    }
+    &:before {
+      width: 200px;
+      height: 211px;
+      top: -108px;
+      right: 0;
+      opacity: .8;
+      background: url("../images/provender-3.png") no-repeat;
+      @include from('l') {
+        right: -20px;
+      }
     }
     &:after {
       width: 100%;

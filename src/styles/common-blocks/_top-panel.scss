@@ -2,7 +2,8 @@
   z-index: 91;
   @include from('l') {
     position: absolute;
-    padding-top: 40px;
+    padding-top: 30px;
+    padding-left: 10px;
   }
   @include to('m') {
     height: 55px;
