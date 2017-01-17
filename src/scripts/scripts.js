@@ -26,7 +26,7 @@ $(document).ready(function () {
         loop: true
     });
 
-    $('#modalNewsCarousel').owlCarousel({
+    $('#modalResourcesCarousel').owlCarousel({
         items: 1,
         loop: true,
         dots: false,
