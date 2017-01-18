@@ -1,0 +1,19 @@
+.list-articles {
+  li {
+    margin-bottom: 35px;
+  }
+  .title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+    a {
+      border-bottom-style: none;
+    }
+  }
+  &__content {
+    margin-bottom: 10px;
+  }
+  .read-more {
+    border-bottom-style: dashed;
+  }
+}

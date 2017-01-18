@@ -36,6 +36,7 @@
 @import "page-blocks/pagination-archives";
 @import "page-blocks/grid-resources";
 @import "page-blocks/modal-resources-carousel";
+@import "page-blocks/list-articles";
 
 .home-page {
   .main-content {
@@ -95,5 +96,17 @@
     &:hover {
       border-color: transparent;
     }
+  }
+}
+
+.products-page {
+  &:before {
+    width: 100%;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f2f2f2;
+    content: '';
   }
 }
