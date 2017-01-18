@@ -1,0 +1,27 @@
+.conference-info {
+  @include from('s') {
+    &__date {
+      width: 12%;
+      padding-top: 5px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &__container {
+      width: 87%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  .title {
+    margin: 0 0 20px;
+  }
+  .text {
+    margin: 35px 0 40px;
+  }
+  .archive:before {
+    margin-right: 10px;
+    color: #f17f21;
+    font-size: 30px;
+    vertical-align: bottom;
+  }
+}

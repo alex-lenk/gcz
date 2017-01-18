@@ -132,18 +132,7 @@ ol ol {
     padding-left: 0;
     list-style: none;
   }
-  &-orange {
-    list-style: none;
-    padding-left: 0;
-    li {
-      margin-bottom: 10px;
-      &:before {
-        color: #f17f21;
-        content: "•";
-        padding-right: 5px;
-      }
-    }
-  }
+  &-orange,
   &-hyphen {
     list-style: none;
     padding-left: 0;
@@ -154,9 +143,15 @@ ol ol {
       &:before {
         position: absolute;
         left: 0;
-        content: "-";
       }
     }
+  }
+  &-orange li:before {
+    color: #f17f21;
+    content: "•";
+  }
+  &-hyphen li:before {
+    content: "-";
   }
 }
 

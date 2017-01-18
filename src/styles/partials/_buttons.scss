@@ -30,7 +30,6 @@ button {
   &-lines {
     background-color: #f17f21;
     position: relative;
-    text-transform: uppercase;
     @include to('xs') {
       margin: 0 0 0 -15px;
       box-sizing: content-box;
