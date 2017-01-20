@@ -39,6 +39,15 @@
 @import "page-blocks/list-articles";
 @import "page-blocks/conference-info";
 @import "page-blocks/search-list";
+@import "page-blocks/not-found";
+
+.home-page, .not-found {
+  @include from('l') {
+    .search-line__decor, .search-area__submit {
+      background-color: transparent;
+    }
+  }
+}
 
 .home-page {
   .main-content {
