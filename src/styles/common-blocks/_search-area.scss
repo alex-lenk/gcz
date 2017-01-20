@@ -1,50 +1,31 @@
-.search-area {
-  @include to('m') {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    z-index: 9;
-    background-color: #ffffff;
-  }
-  @include from('l') {
-    position: absolute;
-    z-index: 4;
-    right: 10px;
-    top: 10px;
-    opacity: .8;
-  }
-  &__active, &:hover {
-    @include to('m') {
-      width: 100%;
-      padding-left: 45px;
-    }
-    .search-area__button {
-      border-color: #14a758;
-      background-color: #14a758;
-      &:before {
-        color: #ffffff;
-      }
-    }
-    .search-area__input {
-      width: 340px;
-      opacity: 1;
-      visibility: visible;
-      @include from('l') {
-        width: 100%;
-        border-color: #ece8e1;
-      }
-      @include to('m') {
-        width: 100%;
-        border-color: #ece8e1;
-      }
+.search-line {
+  position: relative;
+  &__decor {
+    border: 2px solid #14a758;
+    border-radius: 50%;
+    float: right;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    z-index: 7;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #14a758;
+    &:before {
+      font-size: 18px;
+      color: #ffffff;
+      transition: all 0.3s ease;
     }
   }
   &__input {
-    width: 0;
-    opacity: 0;
-    visibility: hidden;
+    width: 100%;
     padding-left: 15px;
-    border: 2px solid #ffffff;
+    border: 2px solid #ece8e1;
     background-color: rgba(255, 255, 255, .6);
     border-radius: 20px;
     color: #282828;
@@ -57,34 +38,70 @@
     &:focus, &:active {
       outline: none;
     }
-    @include to('m') {
-      width: 100%;
-      border-color: #ece8e1;
-    }
-    @include to('s') {
-      width: 0;
-    }
   }
-  &__button {
-    border: 2px solid #f0ede8;
-    border-radius: 50%;
-    float: right;
+}
+
+.search-area {
+  position: absolute;
+  z-index: 92;
+  overflow: hidden;
+  @include from('l') {
+    right: 10px;
+    top: 10px;
+  }
+  @include to('m') {
+    padding: 7px 0 0 15px;
+    top: 0;
+    right: 5px;
+    background-color: #ffffff;
+  }
+  &__submit {
     width: 40px;
     height: 40px;
-    line-height: 42px;
-    text-align: center;
-    cursor: pointer;
+    padding: 0;
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    border: 0;
+    border-radius: 50% 0 0 50%;
+  }
+
+  .search-line__input {
+    transform: translateX(100%);
+    will-change: transform;
+    opacity: 0;
     position: relative;
-    z-index: 7;
-    background-color: transparent;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 4;
+  }
+  .search-line__decor {
+    background-color: #ffffff;
+    border: 2px solid #f0ede8;
+    z-index: 6;
     &:before {
-      font-size: 18px;
       color: #14a758;
-      transition: all 0.3s ease;
+    }
+  }
+  &__active {
+    width: 340px;
+    @include to('m') {
+      width: 100%;
+    }
+    .search-line__decor {
+      background-color: #14a758;
+      border: 2px solid #14a758;
+      &:before {
+        color: #ffffff;
+      }
+    }
+    .search-line__input {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    .search-area__submit {
+      z-index: 7;
+      background-color: transparent;
     }
   }
 }

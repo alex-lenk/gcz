@@ -38,6 +38,7 @@
 @import "page-blocks/modal-resources-carousel";
 @import "page-blocks/list-articles";
 @import "page-blocks/conference-info";
+@import "page-blocks/search-list";
 
 .home-page {
   .main-content {
@@ -117,4 +118,10 @@
 
 .thumbnail {
   border: 2px solid #f2f2f2;
+}
+
+.search-page {
+  .search-line {
+    margin-bottom: 40px;
+  }
 }
