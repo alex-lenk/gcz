@@ -33,7 +33,7 @@
 @import "page-blocks/structure-company";
 @import "page-blocks/staff-contacts";
 @import "page-blocks/gallery-images";
-@import "page-blocks/pagination-archives";
+@import "page-blocks/pagination";
 @import "page-blocks/grid-resources";
 @import "page-blocks/modal-resources-carousel";
 @import "page-blocks/list-articles";
@@ -113,4 +113,8 @@
     background-color: #f2f2f2;
     content: '';
   }
+}
+
+.thumbnail {
+  border: 2px solid #f2f2f2;
 }

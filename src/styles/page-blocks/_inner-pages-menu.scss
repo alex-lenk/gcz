@@ -17,4 +17,25 @@
       }
     }
   }
+
+  .current a {
+    color: #f17f21;
+    border-bottom-color: transparent;
+  }
+}
+
+.wrap-animal-menu {
+  padding: 10px 10px 0 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  .block-icon {
+    margin-right: 20px;
+    font-size: 60px;
+    color: #f17f21;
+  }
+  .inner-pages-menu {
+    margin: 0;
+    padding: 0;
+  }
 }
