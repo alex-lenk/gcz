@@ -6,12 +6,13 @@
   &__title {
     margin: 0 0 5px;
   }
+
   &__pre-title {
     margin: 0 0 35px;
   }
 
   &__list {
-    margin: 0 0 80px;
+    margin: 0 -10px 80px;
     padding: 0;
     list-style: none;
     @include clearfix;
@@ -22,48 +23,66 @@
         display: inline-block;
       }
     }
-    li {
-      padding-left: 0;
-      position: relative;
-      @include to('s') {
-        margin-bottom: 90px;
-      }
-      &:after {
-        width: 249px;
-        height: 237px;
-        content: '';
-        position: absolute;
-      }
+  }
+
+  &__for-calves,
+  &__for-piglets,
+  &__for-chickens,
+  &__for-chicken,
+  &__for-cow,
+  &__for-pig,
+  &__for-rabbits {
+    position: relative;
+    @include to('s') {
+      margin-bottom: 90px;
     }
-    .for-calves {
-      &:after {
-        bottom: -85px;
-        right: -20px;
-        background: url("../images/calves.png") no-repeat;
-      }
-      img {
-        margin-left: -25px;
-      }
+    &:after {
+      width: 235px;
+      height: 200px;
+      bottom: -50px;
+      content: '';
+      position: absolute;
     }
-    .for-piglets {
-      &:after {
-        bottom: -95px;
-        right: -30px;
-        background: url("../images/piglets.png") no-repeat;
-      }
-      img {
-        margin-left: -15px;
-      }
-    }
-    .for-chickens {
-      &:after {
-        bottom: -115px;
-        right: -50px;
-        background: url("../images/chickens.png") no-repeat;
-      }
-      img {
-        margin-left: -5px;
-      }
-    }
+  }
+
+  &__for-calves:after {
+    right: -20px;
+    background: url("../images/calves.png") no-repeat;
+  }
+  &__for-piglets:after {
+    right: -30px;
+    background: url("../images/piglets.png") no-repeat;
+  }
+  &__for-chickens:after {
+    right: -25px;
+    background: url("../images/chickens.png") no-repeat;
+  }
+  &__for-chicken:after {
+    width: 176px;
+    height: 198px;
+    bottom: -68px;
+    right: -15px;
+    background: url("../images/chicken.png") no-repeat;
+  }
+  &__for-cow:after {
+    width: 273px;
+    height: 196px;
+    bottom: -71px;
+    right: -47px;
+    background: url("../images/cow.png") no-repeat;
+  }
+  &__for-pig:after {
+    width: 246px;
+    height: 191px;
+    bottom: -68px;
+    right: -41px;
+    background: url("../images/pig.png") no-repeat;
+  }
+  &__for-rabbits:after {
+    width: 208px;
+    height: 191px;
+    bottom: -43px;
+    right: -37px;
+    background: url("../images/rabbit.png") no-repeat;
   }
 }

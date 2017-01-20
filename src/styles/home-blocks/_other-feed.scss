@@ -14,34 +14,6 @@
       }
     }
   }
-  .for-cow:after {
-    width: 273px;
-    height: 196px;
-    bottom: -71px;
-    right: -47px;
-    background: url("../images/cow.png") no-repeat;
-  }
-  .for-pig:after {
-    width: 246px;
-    height: 191px;
-    bottom: -68px;
-    right: -41px;
-    background: url("../images/pig.png") no-repeat;
-  }
-  .for-chicken:after {
-    width: 176px;
-    height: 198px;
-    bottom: -68px;
-    right: -44px;
-    background: url("../images/chicken.png") no-repeat;
-  }
-  .for-rabbits:after {
-    width: 208px;
-    height: 191px;
-    bottom: -43px;
-    right: -37px;
-    background: url("../images/rabbit.png") no-repeat;
-  }
   .technology {
     padding: 0;
     @include from('s') {

@@ -92,6 +92,9 @@
 }
 
 .page-content {
+  h2 a, h4 a {
+    border-bottom-color: transparent;
+  }
   a {
     border-bottom: 1px solid;
     &:hover {

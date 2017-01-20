@@ -1,7 +1,8 @@
 <aside class="nav-sidebar">
     <div class="nav-contacts">
         <a href="tel:+73414166262" class="nav-contacts__phone">+7 (34141) 6-62-62</a>
-        <button class="link-dashed nav-contacts__button" data-toggle="modal" data-target="#contactUs">Написать нам</button><br>
+        <button class="link-dashed nav-contacts__button" data-toggle="modal" data-target="#contactUs">Написать нам</button>
+        <br>
         <button class="link-dashed nav-contacts__button" data-toggle="modal" data-target="#callOrder">Заказать звонок</button>
     </div>
     <!-- /nav-contacts -->
@@ -16,15 +17,17 @@
     <!-- /nav-menu -->
 
     <nav class="nav-products">
-        <h3 class="nav-products__button as-link" data-toggle="collapse"
-            data-target="#collapseProducts" aria-expanded="true" aria-controls="collapseProducts">
-            продукция <span class="icon-bottom"></span>
+        <h3 class="nav-products__button">
+            <a href="products.html">продукция</a>
+            <span class="icon-bottom as-link" data-toggle="collapse" data-target="#collapseProducts" aria-expanded="true"
+                  aria-controls="collapseProducts"></span>
         </h3>
 
         <div class="collapse in" id="collapseProducts">
             <ul class="nav-products__menu">
                 <li class="nav-products__next">
-                    <a href="#" class="icon-chicken">Для птиц</a><span class="icon-next"></span>
+                    <a href="products-for-chickens.html" class="icon-chicken">Для птиц</a>
+                    <span class="icon-next"></span>
                 </li>
                 <li><a href="#" class="icon-pig-head">Для свиней</a></li>
                 <li><a href="#" class="icon-cow">Для коров</a></li>
