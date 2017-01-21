@@ -3,17 +3,23 @@ $(document).ready(function () {
     // Different events
     $(".search-area__button").click(
         function () {
-            $('.search-area').addClass("search-area__active");
+            $('.search-area').removeClass('is-home-search').addClass("search-area__active");
         }
     );
 
-    $(".nav-products__next .icon-next").click(
+    $("#for-chickens").click(
         function () {
             $('.nav-products').toggleClass("nav-products__active");
         }
     );
 
-    $(".burger-menu-activate").click(
+    $(".close-bar-sub-menu").click(
+        function () {
+            $('.nav-products').toggleClass("nav-products__active");
+        }
+    );
+
+    $(".burger-menu-activate,.close-bar-menu").click(
         function () {
             $('.burger-menu-activate').toggleClass("icon-cancel");
             $('.nav-sidebar').toggleClass("nav-sidebar-show");
@@ -22,11 +28,10 @@ $(document).ready(function () {
 
     $('#news-carousel').owlCarousel({
         items: 1,
-        smartSpeed: 450,
         loop: true
     });
 
-    $('#modalResourcesCarousel').owlCarousel({
+    $('.modalResourcesCarousel').owlCarousel({
         items: 1,
         loop: true,
         dots: false,

@@ -7,14 +7,14 @@
   }
   .animal-feed__list {
     margin-bottom: 0;
-    li {
+    & > li {
       padding-left: 10px;
       &:not(:last-child) {
         margin-bottom: 85px;
       }
     }
   }
-  .technology {
+  .infographics {
     padding: 0;
     @include from('s') {
       text-align: left;
@@ -23,6 +23,7 @@
       width: 100%;
       @include from('s') {
         margin-top: 0;
+        margin-bottom: 0;
         &:before {
           float: left;
           margin: 10px 15px 65px 0;
@@ -30,8 +31,8 @@
       }
     }
   }
-  .technology-title {
-    min-height: initial;
+  .infographics-title {
+    margin-bottom: 15px;
     @include from('s') {
       margin-top: 0;
     }

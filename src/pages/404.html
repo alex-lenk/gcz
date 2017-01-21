@@ -2,10 +2,19 @@
 <html lang="ru">
 <!-- include "common-blocks/head.html" -->
 <body class="not-found gradient">
-<div class="container">
-    <!-- include "common-blocks/top-panel.html" -->
+<div class="container wrap-error">
+    <div class="top-panel">
+        <span class="burger-menu-activate"></span>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
 
-    <!-- include "common-blocks/search-area.html" -->
+        <div class="is-home-search search-area search-line">
+            <span class="search-area__button search-line__decor icon-search"></span>
+            <button class="search-area__submit" type="submit"></button>
+            <input type="search" name="search" placeholder="Поиск" class="search-line__input hide-placeholder">
+        </div>
+    </div>
+    <!-- /top-panel -->
+
     <div class="text-center">
         <img src="images/bg-error.png" alt="404">
 
@@ -13,7 +22,7 @@
 
         <p class="not-found__text">Проверьте, пожалуйста, правильность написания адреса.</p>
 
-        <div class="not-found__back"><a href="#">Вернуться назад</a></div>
+        <div class="not-found__back"><a href="index.html">Вернуться назад</a></div>
     </div>
 </div>
 

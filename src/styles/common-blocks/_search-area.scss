@@ -82,6 +82,11 @@
       color: #14a758;
     }
   }
+
+  &.is-home-search .search-line__decor {
+    background-color: transparent;
+  }
+
   &__active {
     width: 340px;
     @include to('m') {

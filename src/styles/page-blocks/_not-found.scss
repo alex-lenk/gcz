@@ -9,6 +9,9 @@
   background: linear-gradient(to right, rgba(226, 161, 135, 0.87) 0%, rgba(226, 162, 135, 0.91) 2%, rgba(226, 164, 136, 0.93) 5%, rgba(226, 171, 139, 0.93) 18%, rgba(229, 173, 136, 0.93) 30%, rgba(235, 170, 129, 0.93) 40%, rgba(237, 172, 130, 0.93) 48%, rgba(237, 169, 135, 0.93) 62%, rgba(233, 155, 130, 0.93) 82%, rgba(232, 155, 130, 0.93) 90%, rgba(231, 158, 132, 0.93) 95%, rgba(230, 160, 134, 0.91) 98%, rgba(230, 160, 134, 0.89) 99%, rgba(228, 159, 133, 0.87) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dee2a187', endColorstr='#dee49f85', GradientType=1);
 
+  .wrap-error {
+    position: relative;
+  }
   img {
     font-size: 300px;
     color: #fff;

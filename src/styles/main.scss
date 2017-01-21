@@ -14,7 +14,7 @@
 @import "common-blocks/nav";
 @import "common-blocks/top-panel";
 @import "common-blocks/search-area";
-@import "common-blocks/technology";
+@import "common-blocks/infographics";
 @import "common-blocks/manufactured";
 @import "common-blocks/footer";
 /* home-blocks */
@@ -43,7 +43,7 @@
 
 .home-page, .not-found {
   @include from('l') {
-    .search-line__decor, .search-area__submit {
+    .search-area__submit {
       background-color: transparent;
     }
   }
@@ -122,6 +122,9 @@
     left: 0;
     background-color: #f2f2f2;
     content: '';
+  }
+  .animal-feed {
+    padding-top: 0;
   }
 }
 
