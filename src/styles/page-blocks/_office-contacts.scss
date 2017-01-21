@@ -1,0 +1,60 @@
+.map-container {
+  margin-bottom: 40px;
+  position: relative;
+  .icon-location-sign {
+    font-size: 25px;
+    position: absolute;
+    color: #14a758;
+    &.current {
+      color: #f17f21;
+    }
+  }
+  .office-contacts__list {
+    width: 260px;
+    padding: 15px 15px 0;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 15px;
+    &:before {
+      position: absolute;
+      top: -20px;
+      left: 45px;
+      border: 10px solid transparent;
+      border-bottom-color: #ffffff;
+      content: '';
+      @include from('m') {
+        top: 30px;
+        left: -20px;
+        border-right-color: #ffffff;
+        border-bottom-color: transparent;
+      }
+    }
+  }
+}
+
+.office-contacts {
+  &__item {
+    margin-bottom: 30px;
+    @include from('m') {
+      width: 49%;
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  &__list li {
+    padding-left: 40px;
+    margin-bottom: 18px;
+    position: relative;
+    &.icon-place-localizer:before {
+      top: -5px;
+      font-size: 31px;
+    }
+    &:before {
+      color: #f17f21;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      font-size: 25px;
+    }
+  }
+}

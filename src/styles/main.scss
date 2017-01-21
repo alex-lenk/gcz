@@ -40,6 +40,7 @@
 @import "page-blocks/conference-info";
 @import "page-blocks/search-list";
 @import "page-blocks/not-found";
+@import "page-blocks/office-contacts";
 
 .home-page, .not-found {
   @include from('l') {
