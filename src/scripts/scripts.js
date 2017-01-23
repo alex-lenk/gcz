@@ -37,7 +37,7 @@ $(document).ready(function () {
         dots: false,
         nav: true,
         smartSpeed: 450,
-        navText: ['<span class="icon-preview"></span>','<span class="icon-next"></span>']
+        navText: ['<span class="icon-preview"></span>', '<span class="icon-next"></span>']
     });
 
     // Кнопка вверх
@@ -55,4 +55,55 @@ $(document).ready(function () {
     });
 
     $(".fancybox").fancybox();
+
+    $('.card-product__slider-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        asNavFor: '.card-product__slider-mini'
+    });
+
+    $('.card-product__slider-mini').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.card-product__slider-big',
+        dots: false,
+        focusOnSelect: true,
+        nextArrow: '<span class="slick-next slick-arrow icon-next"></span>',
+        prevArrow: '<span class="slick-prev slick-arrow icon-preview"></span>'
+    });
+
+    $('.product-purchased__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        nextArrow: '<span class="slick-next slick-arrow icon-next"></span>',
+        prevArrow: '<span class="slick-prev slick-arrow icon-preview"></span>',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
 });

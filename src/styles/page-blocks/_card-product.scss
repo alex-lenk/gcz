@@ -1,0 +1,17 @@
+.card-product {
+  h4 {
+    margin-top: 0;
+  }
+  &__slider-big {
+    margin-bottom: 20px;
+  }
+  &__slider-mini {
+    .slick-current img {
+      border-color: #f17f21;
+      cursor: pointer;
+    }
+    .slick-slide {
+      cursor: pointer;
+    }
+  }
+}

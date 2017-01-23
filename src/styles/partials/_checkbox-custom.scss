@@ -6,7 +6,7 @@
 */
 .checkbox-custom {
   display: none;
-  + .checkbox-custom-view::before {
+  + .checkbox-custom-view:before {
     width: 27px;
     height: 27px;
     margin: 2px 0 0 -47px;
@@ -18,20 +18,21 @@
   }
   &:checked {
     + .checkbox-custom-view {
-      &::after {
-        width: 13px;
-        height: 10px;
+      @include to('s') {
+        font-size: 13px;
+      }
+      &:after {
         top: 10px;
         left: 7px;
-        border-bottom: 3px solid #f17f21;
-        border-left: 3px solid #f17f21;
         position: absolute;
         display: block;
-        content: '';
-        transform: rotate(-56deg);
+        font-size: 15px;
+        color: #f17f21;
+        content: $icon-checkbox;
+        @include icomoon;
       }
     }
-    .checkbox-custom-view::before {
+    .checkbox-custom-view:before {
       background-color: #F2F2F2;
     }
   }

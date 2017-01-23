@@ -20,7 +20,8 @@
     "normalize-css": "^5.*",
     "bootstrap": "^3.*",
     "owlcarousel": "^1.*",
-    "fancybox": "^2.*"
+    "fancybox": "^2.*",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "html5shiv": "^3.7.3"

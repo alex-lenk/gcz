@@ -1,7 +1,7 @@
-//@import "common/radio-custom";
 @import 'lib/breakpoint';
 @import 'lib/breakpoint-slicer';
 //common
+@import "partials/variables";
 @import "partials/mixin";
 @import "partials/fonts";
 @import "partials/common";
@@ -41,6 +41,9 @@
 @import "page-blocks/search-list";
 @import "page-blocks/not-found";
 @import "page-blocks/office-contacts";
+@import "page-blocks/nav-tabs";
+@import "page-blocks/card-product";
+@import "page-blocks/product-purchased";
 
 .home-page, .not-found {
   @include from('l') {

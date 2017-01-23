@@ -137,7 +137,8 @@ ol ol {
     list-style: none;
   }
   &-orange,
-  &-hyphen {
+  &-hyphen,
+  &-arrow {
     list-style: none;
     padding-left: 0;
     li {
@@ -153,6 +154,15 @@ ol ol {
   &-orange li:before {
     color: #f17f21;
     content: "•";
+  }
+  &-arrow li {
+    padding-left: 35px;
+    &:before {
+      font-size: 25px;
+      color: #f17f21;
+      @include icomoon;
+      content: $icon-checkbox;
+    }
   }
   &-hyphen li:before {
     content: "-";

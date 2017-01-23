@@ -1,0 +1,45 @@
+.nav-tabs {
+  margin: 40px 0;
+  li {
+    padding: 6px 15px 8px;
+    border: 2px solid #14a758;
+    border-radius: 20px;
+    @include from('s') {
+      padding-left: 15px;
+      padding-right: 10px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:not(.active) {
+      color: #14a758;
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      &:active {
+        border-color: #f17f21;
+      }
+    }
+    &:not(:last-child) {
+      margin: 0 20px 20px 0;
+      @include to('xs') {
+        margin-right: 0;
+      }
+    }
+    &.active {
+      color: #ffffff;
+      background-color: #14a758;
+      cursor: default;
+    }
+  }
+}
+
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}

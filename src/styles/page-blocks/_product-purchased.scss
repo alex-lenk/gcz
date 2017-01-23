@@ -1,0 +1,26 @@
+.product-purchased {
+  padding: 40px 0 60px;
+  &__slider {
+    text-align: center;
+    @include from('s') {
+      .slick-next {
+        right: 15px;
+      }
+      .slick-prev {
+        left: 15px;
+      }
+      .slick-slide {
+        padding: 0 45px;
+      }
+    }
+    .title {
+      margin-bottom: 5px;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    .slick-arrow {
+      margin-top: -45px;
+    }
+  }
+}
