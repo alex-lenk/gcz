@@ -50,7 +50,7 @@
   }
 
   &-contacts {
-    padding: 10px 0 25px;
+    padding: 20px 0 25px;
     &__phone {
       font-size: 20px;
       color: #282828;
@@ -76,7 +76,7 @@
 
   &-products {
     margin-bottom: 15px;
-    padding: 35px 0;
+    padding: 25px 0;
     @include from('l') {
       z-index: 7;
       position: relative;
@@ -98,6 +98,7 @@
       z-index: 7;
       .icon-bottom {
         font-size: 14px;
+        text-decoration: none;
       }
     }
     &__menu {
@@ -161,6 +162,9 @@
       will-change: transform;
       opacity: 0;
       z-index: 5;
+      @include from('l') {
+        height: 100%;
+      }
       @include to('m') {
         width: 250px;
         height: 100%;

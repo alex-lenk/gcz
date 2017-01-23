@@ -4,7 +4,7 @@
   text-align: center;
 
   &__title {
-    margin: 0 0 5px;
+    margin: 0 0 15px;
   }
 
   &__pre-title {
@@ -84,5 +84,9 @@
     bottom: -43px;
     right: -37px;
     background: url("../images/rabbit.png") no-repeat;
+  }
+
+  .infographics {
+    margin-bottom: 15px;
   }
 }

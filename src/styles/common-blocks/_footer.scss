@@ -13,7 +13,7 @@ footer {
 }
 
 .footer-head {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   @include clearfix;
 
   .pull-left {
@@ -94,6 +94,10 @@ footer {
   }
   .h3 {
     padding-left: 0;
+    text-transform: uppercase;
+    @include from('l') {
+      letter-spacing: 4px;
+    }
     @include to('xs') {
       padding-bottom: 10px;
       font-size: 20px;
@@ -103,6 +107,7 @@ footer {
   }
   &__list {
     margin: 0;
+    padding-top: 5px;
     padding-right: 0;
     padding-left: 0;
     list-style: none;
@@ -125,6 +130,9 @@ footer {
       }
       @include to('s') {
         margin-bottom: 10px;
+      }
+      @include from('l') {
+        letter-spacing: 1px;
       }
     }
     &:after {

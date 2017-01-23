@@ -13,7 +13,7 @@
 /* common-blocks */
 @import "common-blocks/nav";
 @import "common-blocks/top-panel";
-@import "common-blocks/search-area";
+@import "common-blocks/search";
 @import "common-blocks/infographics";
 @import "common-blocks/manufactured";
 @import "common-blocks/footer";
@@ -60,7 +60,7 @@
     padding-top: 318px;
     padding-bottom: 0;
     @include from('l') {
-      padding-top: 430px;
+      padding-top: 440px;
     }
     @include to('xs') {
       padding-top: 380px;
@@ -138,8 +138,9 @@
   border: 2px solid #f2f2f2;
 }
 
-.search-page {
-  .search-line {
-    margin-bottom: 40px;
+.modal-thank-you {
+  .modal-body {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }

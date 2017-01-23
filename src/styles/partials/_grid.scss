@@ -3,6 +3,8 @@
   max-width: 960px;
   margin-right: auto;
   margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
   @include clearfix;
   @include to('m') {
     padding-left: 15px;

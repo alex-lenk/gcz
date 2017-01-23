@@ -18,17 +18,24 @@
   }
 
   &__title {
+    margin-top: -106px;
     margin-bottom: 10px;
     font-size: 25px;
     color: #ffffff;
+    letter-spacing: 1px;
+    @include FranklinGothicMedium;
     @include from('s') {
       font-size: 40px;
     }
   }
   &__text {
+    margin-bottom: 0;
     color: #ffffff;
   }
   &__back {
-    margin: 40px 0;
+    margin: 28px 0 55px;
+    a {
+      text-decoration: underline;
+    }
   }
 }

@@ -45,23 +45,29 @@
 
 .close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 21px;
+  right: 21px;
   line-height: 1;
-  font-size: 18px;
+  font-size: 19px;
   color: #14a758;
   cursor: pointer;
-  transition: all .3s ease;
-  &:hover, &:focus {
-    color: #f17f21;
-  }
-}
-
-button.close {
   padding: 0;
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  transition: all .3s ease;
+  &-air {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #d5d2cc;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: -50px;
+    right: 0;
+  }
+  &:hover, &:focus {
+    color: #f17f21;
+  }
 }
 
 .modal-open {
@@ -127,7 +133,7 @@ button.close {
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    border-radius: 15px;
+    border-radius: 20px;
   }
 }
 
@@ -166,7 +172,7 @@ button.close {
 
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 500px;
     margin: 30px auto;
   }
 

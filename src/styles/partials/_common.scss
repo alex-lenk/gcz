@@ -22,6 +22,10 @@ a, .as-link, .link-dashed {
   }
 }
 
+.as-link {
+  text-decoration: underline;
+}
+
 .as-link, .link-dashed {
   cursor: pointer;
   border: transparent;
@@ -244,7 +248,7 @@ blockquote .small:before {
 }
 
 .inner-pattern {
-  padding-top: 45px;
+  padding-top: 55px;
   position: relative;
   &:after, &:before {
     content: '';
@@ -301,16 +305,24 @@ blockquote .small:before {
   }
 }
 
-.general-form {
-  padding: 20px 15px;
-  @include from('s') {
-    padding-right: 45px;
-    padding-left: 45px;
-  }
+.modal {
   .modal-title {
-    margin: 0 0 20px;
+    margin: 0 0 15px;
+    letter-spacing: 1px;
   }
-  .button-default {
-    width: 100%;
+  .modal-sub-title {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-style: italic;
+  }
+  .general-form {
+    padding: 20px 15px;
+    @include from('s') {
+      padding-right: 45px;
+      padding-left: 45px;
+    }
+    .button-default {
+      width: 100%;
+    }
   }
 }

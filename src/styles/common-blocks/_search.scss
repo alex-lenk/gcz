@@ -1,3 +1,7 @@
+.search-page .search-line {
+  margin-bottom: 40px;
+}
+
 .search-line {
   position: relative;
   &__decor {
@@ -47,7 +51,7 @@
   overflow: hidden;
   @include from('l') {
     right: 10px;
-    top: 10px;
+    top: 20px;
   }
   @include to('m') {
     padding: 7px 0 0 15px;

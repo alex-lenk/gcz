@@ -9,7 +9,8 @@
   + .checkbox-custom-view:before {
     width: 27px;
     height: 27px;
-    margin: 2px 0 0 -47px;
+    top: -3px;
+    left: 0;
     content: '';
     position: absolute;
     line-height: normal;
@@ -22,7 +23,7 @@
         font-size: 13px;
       }
       &:after {
-        top: 8px;
+        top: 3px;
         left: 7px;
         position: absolute;
         display: block;
@@ -39,8 +40,8 @@
   &-view {
     display: inline-block;
     cursor: pointer;
-    padding-left: 47px;
-    line-height: 37px;
+    padding-left: 40px;
+    line-height: 20px;
     position: relative;
     color: #767676;
     font-weight: 300;
