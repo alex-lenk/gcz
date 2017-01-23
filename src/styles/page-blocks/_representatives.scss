@@ -1,0 +1,10 @@
+.representatives {
+  .become-agent {
+    background-color: transparent;
+  }
+  @include to('s') {
+    .become {
+      display: none;
+    }
+  }
+}

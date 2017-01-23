@@ -1,0 +1,27 @@
+.promotional-materials {
+  &__list {
+    li {
+      width: 33%;
+      margin-left: -4px;
+      margin-bottom: 40px;
+      padding-left: 40px;
+      position: relative;
+      @include from('m') {
+        display: inline-block;
+        vertical-align: top;
+      }
+      &:before {
+        font-size: 18px;
+        color: #14a758;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    .date {
+      margin-bottom: 5px;
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}

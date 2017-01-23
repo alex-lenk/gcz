@@ -44,6 +44,8 @@
 @import "page-blocks/nav-tabs";
 @import "page-blocks/card-product";
 @import "page-blocks/product-purchased";
+@import "page-blocks/representatives";
+@import "page-blocks/promotional-materials";
 
 .home-page, .not-found {
   @include from('l') {
@@ -79,7 +81,7 @@
       content: '';
       background-color: rgba(255, 255, 255, 0.7);
       z-index: 5;
-      box-shadow: 4px 0 7px 0 rgba(0, 0, 0, 0.3);
+      box-shadow: 1px 0 6px 0 rgba(0, 0, 0, 0.3);
     }
   }
   @include to('m') {

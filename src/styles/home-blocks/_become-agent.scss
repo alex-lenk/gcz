@@ -1,7 +1,6 @@
 .become-agent {
   padding-bottom: 55px;
   background-color: #f2f2f2;
-  text-align: center;
   @include to('xs') {
     padding-bottom: 0;
   }
@@ -19,6 +18,7 @@
     list-style: none;
     position: relative;
     overflow: hidden;
+    text-align: center;
     @include from('s') {
       li:first-child {
         border-bottom: 1px solid #ece8e1;
