@@ -30,7 +30,6 @@
     width: 100%;
     padding-left: 15px;
     border: 2px solid #ece8e1;
-    background-color: rgba(255, 255, 255, .6);
     border-radius: 20px;
     color: #282828;
     height: 40px;
@@ -39,6 +38,9 @@
     z-index: 6;
     font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
     transition: all 0.3s ease;
+    @include from('l') {
+      background-color: rgba(255, 255, 255, .6);
+    }
     &:focus, &:active {
       outline: none;
     }
@@ -62,21 +64,22 @@
     width: 40px;
     height: 40px;
     padding: 0;
-    background-color: #ffffff;
+    background-color: transparent;
     position: absolute;
     z-index: 5;
     top: 0;
     right: 0;
     border: 0;
-    border-radius: 50% 0 0 50%;
+    border-radius: 50%;
   }
 
   .search-line__input {
-    transform: translateX(100%);
-    will-change: transform;
+    width: 40px;
     opacity: 0;
     position: relative;
     z-index: 4;
+    float: right;
+    overflow: hidden;
   }
   .search-line__decor {
     background-color: #ffffff;
@@ -104,8 +107,8 @@
       }
     }
     .search-line__input {
-      transform: translateX(0);
       opacity: 1;
+      width: 100%;
     }
     .search-area__submit {
       z-index: 7;

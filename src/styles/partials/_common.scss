@@ -10,6 +10,14 @@ body {
   @include SegoeUI;
 }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  @include SegoeUI;
+}
+
 a, .as-link, .link-dashed {
   color: #14a758;
   text-decoration: none;
@@ -36,7 +44,7 @@ a, .as-link, .link-dashed {
   border-bottom: 1px dashed;
 }
 
-h1, h2, h4 {
+h1, h2, h4, .h4 {
   text-transform: uppercase;
   font-weight: normal;
   @include FranklinGothicMedium;
@@ -74,7 +82,7 @@ h3, .h3 {
   }
 }
 
-h4 {
+h4, .h4 {
   font-size: 20px;
 }
 
@@ -321,8 +329,14 @@ blockquote .small:before {
       padding-right: 45px;
       padding-left: 45px;
     }
-    .button-default {
-      width: 100%;
-    }
+  }
+}
+
+.general-form {
+  max-width: 380px;
+  margin-right: auto;
+  margin-left: auto;
+  .button-default {
+    width: 100%;
   }
 }

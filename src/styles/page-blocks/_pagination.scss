@@ -8,16 +8,15 @@
     display: inline-block;
     font-size: 24px;
     @include FranklinGothicMedium;
-    a {
-      border-bottom-width: 0;
+    &:not(:first-child):not(:last-child) a {
+      border-bottom: 1px solid;
     }
   }
   .icon-preview, .icon-next {
     font-size: 18px;
   }
-  .current a {
+  .current {
     color: #f17f21;
-    border-bottom-color: transparent;
   }
 
   &-archives {

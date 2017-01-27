@@ -15,6 +15,7 @@
     display: inline-block;
     .link-dashed {
       color: #f17f21;
+      border-bottom-color: transparent;
     }
     &:after {
       padding-left: 5px;
@@ -28,6 +29,7 @@
   .collapsed {
     .link-dashed {
       color: #14a758;
+      border-bottom-color: inherit;
     }
     &:after {
       color: #14a758;

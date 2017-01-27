@@ -54,7 +54,13 @@ $(document).ready(function () {
         });
     });
 
-    $(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+        tpl: {
+            closeBtn : '<a title="Close" class="fancybox-item fancybox-close close close-air icon-cancel" href="javascript:;"></a>',
+            next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-next"></span></a>',
+            prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-preview"></span></a>'
+        }
+    });
 
     $('.card-product__slider-big').slick({
         slidesToShow: 1,
@@ -106,4 +112,6 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('input[name="phone"]').inputmask('+7 999 999 9999');
 });

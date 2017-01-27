@@ -1,10 +1,8 @@
 .top-panel {
   z-index: 91;
   @include from('l') {
-    width: 100%;
     position: absolute;
     padding-top: 40px;
-    padding-left: 10px;
   }
   @include to('m') {
     height: 55px;

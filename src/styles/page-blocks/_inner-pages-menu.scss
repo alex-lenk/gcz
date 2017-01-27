@@ -17,7 +17,9 @@
       }
     }
   }
-
+  a {
+    border-bottom: 1px solid;
+  }
   .current a {
     color: #f17f21;
     border-bottom-color: transparent;
@@ -33,6 +35,9 @@
     margin-right: 20px;
     font-size: 60px;
     color: #f17f21;
+    @include to('xs') {
+      display: none;
+    }
   }
   .inner-pages-menu {
     margin: 0;

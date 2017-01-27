@@ -3,10 +3,19 @@
     border-radius: 0;
   }
   .modal-dialog {
-    width: 600px;
     margin: 60px auto 30px;
+    @include from('s') {
+      width: 600px;
+    }
   }
-
+  .modal-body {
+    @include from('s') {
+      padding: 0 30px;
+    }
+  }
+  .close {
+    line-height: 40px;
+  }
   /* .modal-resources-carousel */
   &-carousel {
     overflow: hidden;

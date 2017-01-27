@@ -1,0 +1,29 @@
+.contacts-page {
+  .search-line__input {
+    max-width: 300px;
+    margin-right: 4px;
+  }
+  .search-line__decor {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include from('s') {
+      display: none;
+    }
+  }
+  .search-line__button {
+    padding: 0 25px;
+    color: #ffffff;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    transition: all 0.3s ease;
+    background-color: #14a758;
+    @include to('xs') {
+      display: none;
+    }
+  }
+}

@@ -1,18 +1,27 @@
+.fixed-block-nav {
+  height: 330px;
+  overflow-y: hidden;
+}
+
 .nav {
   width: 100%;
   height: 100%;
   position: absolute;
 
   &-sidebar {
-    width: 230px;
+    width: 220px;
     height: 100%;
     padding: 110px 0 30px 10px;
     float: left;
     position: relative;
     z-index: 90;
     transition: all 300ms linear;
+    @include from('l') {
+      padding-left: 0;
+    }
     @include to('m') {
       width: 260px;
+      padding-right: 10px;
       background-color: rgba(255, 255, 255, .9);
       transform: translateX(-110%);
       will-change: transform;
@@ -24,6 +33,9 @@
         transform: translateX(0);
         z-index: 92;
       }
+    }
+    @include to('xs') {
+      background-color: #ffffff;
     }
     .company-group {
       padding-top: 40px;
@@ -76,7 +88,7 @@
 
   &-products {
     margin-bottom: 15px;
-    padding: 25px 0;
+    padding: 25px 0 50px;
     @include from('l') {
       z-index: 7;
       position: relative;
@@ -90,15 +102,36 @@
         background-color: inherit;
       }
     }
+
+    //.nav-products__button
     &__button {
-      margin: 0 0 15px;
+      margin: 0 0 25px;
       text-transform: uppercase;
-      letter-spacing: 1px;
       position: relative;
       z-index: 7;
+      a {
+        letter-spacing: 6px;
+        @include from('s') {
+          letter-spacing: 4px;
+        }
+      }
       .icon-bottom {
+        display: none;
+      }
+      .collapsed {
+        .icon-top {
+          display: none;
+        }
+        .icon-bottom {
+          display: inline-block;
+        }
+      }
+      .as-link {
         font-size: 14px;
         text-decoration: none;
+        @include to('xs') {
+          margin-left: 32px;
+        }
       }
     }
     &__menu {
@@ -108,7 +141,8 @@
       position: relative;
       z-index: 7;
       li {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        position: relative;
         @include from('l') {
           &:not(:hover) {
             .icon-next {
@@ -118,18 +152,21 @@
         }
       }
       a {
+        padding-left: 60px;
         position: relative;
         z-index: 6;
         text-transform: uppercase;
         display: inline-block;
+        letter-spacing: 1px;
         @include FranklinGothicMedium;
         &:before {
           color: #f17f21;
           font-size: 40px;
-          margin-right: 20px;
           vertical-align: middle;
-          position: relative;
           z-index: 6;
+          position: absolute;
+          top: -7px;
+          left: 4px;
         }
         &:hover + .icon-next:before {
           color: #f17f21;
@@ -140,6 +177,10 @@
         z-index: 6;
         cursor: pointer;
         padding-left: 5px;
+        @include to('xs') {
+          position: absolute;
+          right: 32px;
+        }
         &:before {
           font-size: 12px;
           color: #14a758;
@@ -154,7 +195,7 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 950px;
+      width: 940px;
       padding: 19px 0 0 0;
       background-color: #fff;
       transform: translateX(-100%);
@@ -164,6 +205,10 @@
       z-index: 5;
       @include from('l') {
         height: 100%;
+        padding-top: 80px;
+        .col-md-offset-3 {
+          padding-left: 5px;
+        }
       }
       @include to('m') {
         width: 250px;
@@ -171,6 +216,12 @@
         z-index: 7;
         .col-md-4 {
           margin-bottom: 30px;
+        }
+      }
+      @include at('m') {
+        .col-md-4, .col-md-3 {
+          width: 100%;
+          margin-left: 0;
         }
       }
       &:before {

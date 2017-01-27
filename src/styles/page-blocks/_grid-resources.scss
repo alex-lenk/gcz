@@ -17,14 +17,12 @@
     &:hover {
       .as-link {
         border-bottom-color: transparent;
+        color: #f17f21;
       }
       img {
         opacity: .9;
       }
     }
-  }
-  .as-link {
-    border-bottom: 1px solid;
   }
   &-media {
     margin: 0 auto 20px;

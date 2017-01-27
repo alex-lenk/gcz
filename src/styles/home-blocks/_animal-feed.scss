@@ -19,9 +19,13 @@
     .item-title {
       line-height: 1.2;
       margin: 0 0 25px;
+      display: inline-block;
       a {
         display: inline-block;
       }
+    }
+    li {
+      position: relative;
     }
   }
 
@@ -32,7 +36,6 @@
   &__for-cow,
   &__for-pig,
   &__for-rabbits {
-    position: relative;
     @include to('s') {
       margin-bottom: 90px;
     }

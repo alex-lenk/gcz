@@ -18,13 +18,13 @@
   }
 
   &__title {
-    margin-top: -106px;
     margin-bottom: 10px;
     font-size: 25px;
     color: #ffffff;
     letter-spacing: 1px;
     @include FranklinGothicMedium;
     @include from('s') {
+      margin-top: -106px;
       font-size: 40px;
     }
   }

@@ -5,6 +5,9 @@
       padding: 0 0 10px 10px;
     }
   }
+  @include to('xs') {
+    padding-top: 15px;
+  }
   .info-left,
   .info-right {
     padding-top: 10px;
@@ -17,14 +20,31 @@
       vertical-align: middle;
     }
   }
+  .info-left {
+    padding-top: 0;
+  }
   li {
+    margin-top: 5px;
     margin-bottom: 5px;
     padding-left: 40px;
     position: relative;
+    @include from('s') {
+      padding-left: 65px;
+    }
+    &:nth-child(2) {
+      margin-top: 8px;
+    }
     &:before {
-      font-size: 22px;
+      font-size: 25px;
       position: absolute;
       left: 0;
+      @include from('s') {
+        left: 28px;
+      }
     }
+  }
+  .text-nowrap {
+    display: inline-block;
+    margin: 5px 0 0;
   }
 }

@@ -71,4 +71,8 @@
     border-radius: 50%;
     transition: all 0.3s ease;
   }
+  .owl-item img {
+    max-width: none;
+    width: auto;
+  }
 }

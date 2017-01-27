@@ -1,6 +1,12 @@
 .map-container {
   margin-bottom: 40px;
   position: relative;
+  @include to('s') {
+    height: 375px;
+    img {
+      max-width: none;
+    }
+  }
   .icon-location-sign {
     font-size: 25px;
     position: absolute;
@@ -47,6 +53,7 @@
     position: relative;
     &.icon-place-localizer:before {
       top: -5px;
+      left: 2px;
       font-size: 31px;
     }
     &:before {

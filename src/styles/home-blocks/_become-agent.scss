@@ -7,6 +7,9 @@
   &__title {
     margin: 0 0 5px;
     line-height: 1;
+    a:not(:hover) {
+      color: #282828;
+    }
   }
   &__pre-title {
     margin: 0 0 30px;
@@ -72,25 +75,26 @@
 
     .become {
       padding: 0;
-      font-size: 20px;
-      text-transform: uppercase;
-      @include FranklinGothicMedium;
       @include from('s') {
-        margin: -95px 0 0 -95px;
+        margin: -88px 0 0 -95px;
         position: absolute;
         top: 50%;
         left: 50%;
       }
       .text {
-        width: 190px;
-        height: 190px;
+        width: 200px;
+        height: 200px;
+        font-size: 20px;
+        padding-bottom: 18px;
+        line-height: 30px;
         border-radius: 50%;
         background-color: #14a758;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        display: block;
         color: #ffffff;
         text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        @include FranklinGothicMedium;
         @include to('xs') {
           margin: auto;
         }

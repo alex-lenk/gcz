@@ -46,6 +46,8 @@
 @import "page-blocks/product-purchased";
 @import "page-blocks/representatives";
 @import "page-blocks/promotional-materials";
+@import "page-blocks/contacts-page";
+@import "page-blocks/product-for-animal";
 
 .home-page, .not-found {
   @include from('l') {
@@ -59,6 +61,7 @@
   .main-content {
     padding-top: 318px;
     padding-bottom: 0;
+    margin-top: 0;
     @include from('l') {
       padding-top: 440px;
     }
@@ -93,9 +96,10 @@
 }
 
 .main-content {
-  padding-top: 60px;
+  margin-top: 60px;
   padding-bottom: 60px;
   position: relative;
+  z-index: 3;
   @include from('l') {
     width: 75%;
     padding-left: 10px;
@@ -110,12 +114,6 @@
 .page-content {
   h2 a, h4 a {
     border-bottom-color: transparent;
-  }
-  a {
-    border-bottom: 1px solid;
-    &:hover {
-      border-color: transparent;
-    }
   }
 }
 
