@@ -1,9 +1,19 @@
 $(document).ready(function () {
 
     // Different events
+    var line__input = $('.search-line__input'),
+        searchArea = $('.search-area'),
+        searchActive = "search-area__active";
+
     $(".search-area__button").click(
         function () {
-            $('.search-area').removeClass('is-home-search').addClass("search-area__active");
+            searchArea.removeClass('is-home-search').addClass(searchActive);
+            line__input.focus();
+        }
+    );
+    line__input.focusout(
+        function () {
+            searchArea.removeClass(searchActive);
         }
     );
 

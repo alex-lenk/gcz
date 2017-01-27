@@ -48,6 +48,7 @@
 @import "page-blocks/promotional-materials";
 @import "page-blocks/contacts-page";
 @import "page-blocks/product-for-animal";
+@import "page-blocks/collapse-properties";
 
 .home-page, .not-found {
   @include from('l') {
