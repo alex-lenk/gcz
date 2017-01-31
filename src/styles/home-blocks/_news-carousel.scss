@@ -53,25 +53,33 @@
       z-index: 8;
     }
   }
-  .owl-dots {
+
+  .slick-dots {
+    padding-left: 0;
     margin-top: 35px;
     text-align: center;
-    .owl-dot:hover, .active {
+    list-style: none;
+    li:hover, .slick-active {
       border-color: #f17f21;
       background-color: #f17f21;
     }
+    li {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid #14a758;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button {
+      display: none;
+    }
   }
-  .owl-dot {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-    display: inline-block;
-    vertical-align: top;
-    border: 1px solid #14a758;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-  }
-  .owl-item img {
+
+  img {
     max-width: none;
     width: auto;
   }

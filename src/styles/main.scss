@@ -121,7 +121,7 @@
 .products-page {
   &:before {
     width: 100%;
-    height: 210px;
+    height: 250px;
     position: absolute;
     top: 0;
     left: 0;
@@ -142,4 +142,16 @@
     padding-top: 150px;
     padding-bottom: 150px;
   }
+}
+
+.manufacturing-page .grid-resources {
+  margin-bottom: 40px;
+}
+
+.news-page .grid-resources {
+  margin-bottom: 50px;
+}
+
+.quality-page .content-collapse {
+  margin-bottom: 30px;
 }

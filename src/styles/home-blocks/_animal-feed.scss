@@ -38,6 +38,7 @@
   &__for-rabbits {
     @include to('s') {
       margin-bottom: 90px;
+      display: block;
     }
     &:after {
       width: 235px;

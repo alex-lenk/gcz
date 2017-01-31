@@ -19,9 +19,6 @@
   }
   &:checked {
     + .checkbox-custom-view {
-      @include to('s') {
-        font-size: 13px;
-      }
       &:after {
         top: 3px;
         left: 7px;
@@ -44,6 +41,8 @@
     line-height: 20px;
     position: relative;
     font-weight: 300;
-
+    @include to('s') {
+      font-size: 13px;
+    }
   }
 }

@@ -10,12 +10,13 @@
   }
   .modal-body {
     @include from('s') {
-      padding: 0 30px;
+      padding: 0 30px 15px;
     }
   }
   .close {
     line-height: 40px;
   }
+
   /* .modal-resources-carousel */
   &-carousel {
     overflow: hidden;

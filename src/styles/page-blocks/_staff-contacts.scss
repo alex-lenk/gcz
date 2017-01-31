@@ -4,10 +4,10 @@
   }
   &-photo {
     padding-left: 0;
-    background-image: url("../images/staff-photo-default.png");
     @include to('s') {
-      margin: 0 auto 15px;
+      margin-bottom: 15px;
       float: none;
+      text-align: center;
     }
     img {
       border: 1px solid #f2f2f2;

@@ -36,11 +36,6 @@ $(document).ready(function () {
         }
     );
 
-    $('#news-carousel').owlCarousel({
-        items: 1,
-        loop: true
-    });
-
     $('.modalResourcesCarousel').owlCarousel({
         items: 1,
         loop: true,
@@ -66,9 +61,9 @@ $(document).ready(function () {
 
     $(".fancybox").fancybox({
         tpl: {
-            closeBtn : '<a title="Close" class="fancybox-item fancybox-close close close-air icon-cancel" href="javascript:;"></a>',
-            next     : '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-next"></span></a>',
-            prev     : '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-preview"></span></a>'
+            closeBtn: '<a title="Close" class="fancybox-item fancybox-close close close-air icon-cancel" href="javascript:;"></a>',
+            next: '<a title="Next" class="fancybox-nav fancybox-next" href="javascript:;"><span class="icon-next"></span></a>',
+            prev: '<a title="Previous" class="fancybox-nav fancybox-prev" href="javascript:;"><span class="icon-preview"></span></a>'
         }
     });
 
@@ -121,6 +116,15 @@ $(document).ready(function () {
                 }
             }
         ]
+    });
+
+    $('#news-carousel').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
     });
 
     $('input[name="phone"]').inputmask('+7 999 999 9999');
