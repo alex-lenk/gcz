@@ -59,15 +59,6 @@
       }
       &__list, &-list {
         transition: all 0.3s ease;
-        &:before {
-          display: none;
-          position: absolute;
-          right: 0;
-          top: 9px;
-          color: #14a758;
-          font-size: 10px;
-          transition: all 0.3s ease;
-        }
         @include to('s') {
           &:before {
             display: inline;
@@ -93,6 +84,14 @@
       border-bottom: 2px solid #ece8e1;
     }
 
+    &__select {
+      display: inline-block;
+      vertical-align: middle;
+      @include from('m') {
+        display: none;
+      }
+    }
+
     ul {
       margin: 0;
       padding-left: 0;
@@ -100,11 +99,13 @@
       display: inline-block;
       vertical-align: middle;
       position: relative;
+      @include to('s') {
+        display: none;
+      }
       a {
         border-bottom: 0;
       }
     }
-
     li {
       font-size: 14px;
       padding: 0 13px;

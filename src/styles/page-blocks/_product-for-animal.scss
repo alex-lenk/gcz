@@ -1,5 +1,10 @@
-.product-for-animal .animal-feed__for-chickens,
-.product-for-animal .animal-feed__for-chicken {
-  position: relative;
-  display: block;
+.product-for-animal {
+  .h2 {
+    display: inline-block;
+  }
+  .animal-feed__for-chickens,
+  .animal-feed__for-chicken {
+    position: relative;
+    display: block;
+  }
 }

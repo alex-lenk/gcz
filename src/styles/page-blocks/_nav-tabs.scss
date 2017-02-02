@@ -12,8 +12,8 @@
     border: 2px solid #14a758;
     border-radius: 20px;
     @include from('s') {
-      padding-left: 15px;
-      padding-right: 10px;
+      padding-left: 24px;
+      padding-right: 19px;
       display: inline-block;
       vertical-align: top;
     }
@@ -31,7 +31,7 @@
       }
     }
     &:not(:last-child) {
-      margin: 0 20px 20px 0;
+      margin: 0 16px 20px 0;
       @include to('xs') {
         margin-right: 0;
       }
