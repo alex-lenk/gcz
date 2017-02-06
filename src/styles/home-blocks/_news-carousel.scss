@@ -13,9 +13,23 @@
     margin: 0 0 30px;
     text-align: center;
   }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-position: center top;
+    @include at('m') {
+      background-size: contain;
+    }
+    img {
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
   &__item-panel {
     padding-top: 20px;
     position: relative;
+    background-color: #fff;
     &:before, &:after {
       height: 20px;
       position: absolute;
@@ -30,7 +44,7 @@
       transform: skewX(45deg);
     }
     &:after {
-      right: -15px;
+      right: -8px;
       width: calc(100% - 75px);
       transform: skewX(-45deg);
     }
