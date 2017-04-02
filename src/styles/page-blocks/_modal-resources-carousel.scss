@@ -3,6 +3,8 @@
     border-radius: 0;
   }
   .modal-dialog {
+    max-width: 600px;
+    width: 100%;
     margin: 60px auto 30px;
     @include from('s') {
       width: 600px;
@@ -15,6 +17,9 @@
   }
 
   /* .modal-resources-carousel */
+  .modal-resources-carousel {
+    padding-top: 30px;
+  }
   &-carousel {
     overflow: hidden;
     .owl-nav {

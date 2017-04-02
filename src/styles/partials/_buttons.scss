@@ -75,6 +75,7 @@ button {
     @include FranklinGothicMedium;
     .icon-bottom {
       font-size: 16px;
+      padding-left: 7px;
     }
     &:hover {
       color: #f17f21;
